@@ -15,7 +15,7 @@ The paper introduces and defines:
 
 This document serves as the **Axiomatic Foundation** for the entire Meaningfulness Media Group (MMG) research program into Cognitive Sovereignty. For more about our broader mission, please visit our main site: [Meaningfulness Media Group](https://Meaningfulness.com.au).
 
-DOI: [Meaningfulness Media Group](https://Meaningfulness.com.au).
+DOI: [10.5281/zenodo.18455937](https://doi.org/10.5281/zenodo.18455937).
 
 ---
 
@@ -49,5 +49,6 @@ We encourage contributions to the ongoing development of the framework, particul
 *   `/TR-002_draft/`: Work-in-progress drafts and mathematical sketches for the proofs of $D_A$. (Feedback most welcome here.)
 *   `/TR-003_draft/`: Initial conceptual models regarding the systemic erosion of agency.
 *   `/Citations/`: BibTeX file for all referenced material.
+
 
 
