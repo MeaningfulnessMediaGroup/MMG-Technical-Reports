@@ -13,7 +13,7 @@ The paper introduces and defines:
 *   **Process Sovereignty:** The concept that the agent is the necessary computational bottleneck for its own future resolution.
 *   **Salient Cause:** The level of explanation that matters for local outcomes.
 
-This document serves as the **Axiomatic Foundation** for the entire Meaningfulness Media Group (MMG) research program into Cognitive Sovereignty.
+This document serves as the **Axiomatic Foundation** for the entire Meaningfulness Media Group (MMG) research program into Cognitive Sovereignty. For more about our broader mission, please visit our main site: [Meaningfulness Media Group](https://Meaningfulness.com.au).
 
 ---
 
@@ -47,3 +47,4 @@ We encourage contributions to the ongoing development of the framework, particul
 *   `/TR-002_draft/`: Work-in-progress drafts and mathematical sketches for the proofs of $D_A$. (Feedback most welcome here.)
 *   `/TR-003_draft/`: Initial conceptual models regarding the systemic erosion of agency.
 *   `/Citations/`: BibTeX file for all referenced material.
+
