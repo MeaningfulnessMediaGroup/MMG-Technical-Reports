@@ -14,23 +14,23 @@
 \usepackage{natbib}
 \usepackage{setspace}
 \usepackage{fancyhdr}
-\usepackage{titling} % <--- NEW: Allows custom title spacing
+\usepackage{titling} 
 \usepackage{enumitem}
 \usepackage{lastpage}
 \usepackage{caption}
 \usepackage{float}
 \usepackage{microtype} 
+\usepackage{etoolbox} 			
 
-\usepackage{etoolbox} % Allows us to "patch" the abstract
-\usepackage[hang]{footmisc} % Standardizes footnote alignment
-\setlength{\footnotemargin}{1em} % Adjusts the gap between '*' and the text
-\usepackage[most]{tcolorbox} % For the professional boxed look
+\usepackage[hang]{footmisc} 		% Standardizes footnote alignment
+\setlength{\footnotemargin}{1em} 	% Adjusts the gap between '*' and the text
+\usepackage[most]{tcolorbox} 		% For the professional boxed look
 
-\usepackage[dvipsnames,table,xcdraw]{xcolor} % Loads the color engine with extra names
+\usepackage[dvipsnames,table,xcdraw]{xcolor} 
 \usepackage{listings}
 \usepackage[colorlinks=true, linkcolor=NavyBlue, citecolor=NavyBlue, urlcolor=NavyBlue]{hyperref}
 
-% Define your custom colors AFTER loading xcolor
+% Custom colors 
 \definecolor{jsonpurple}{rgb}{0.5,0,0.5}
 \definecolor{jsonorange}{rgb}{1,0.5,0}
 
@@ -41,7 +41,7 @@
     keywordstyle=\color{blue},
     commentstyle=\color{gray},
     frame=single,
-    rulecolor=\color{lightgray}, % Changed from black!30 to lightgray for better compatibility
+    rulecolor=\color{lightgray}, %
     showstringspaces=false
 }
 
@@ -49,46 +49,38 @@
 \geometry{
   a4paper,
   margin=1in,
-  top=0.8in, % <--- TWEAK: Slightly higher top margin
+  top=0.8in, 
   bottom=1in
 }
 \onehalfspacing
 
 % --- SPACING SETTINGS ---
-\setlength{\parskip}{0.2em} % Adds a blank line between paragraphs
-%\setlength{\parindent}{0pt} % Removes indentation (modern look)
-% 1. Moves the whole title block up
-
-
-% 3. Spacing for Author (Ensures perfect centering)
+\setlength{\parskip}{0.2em} 
 \preauthor{\begin{center}\large}
 \postauthor{\par\end{center}}
-
-% 4. Spacing for Affiliation (crushes space between Author and Affil)
-\setlength{\affilsep}{-0.3em} % <--- Tweak this for Name-to-Affiliation gap
+\setlength{\affilsep}{-0.3em}
 
 
 % --- COMPACT TITLE SETUP ---
-\setlength{\droptitle}{-4em} % <--- TWEAK: Moves title up
+\setlength{\droptitle}{-4em} 
 \title{\textbf{The Illusion of Fatalism}\\
     \large Distinguishing Causal Determinism from Pre-Destination in Complex Systems\\
     \vspace{1.5em}
     \small MMG Technical Report No. 1: \texttt{MMG-TR-001} \\
     \small \textbf{Status:} \textit{Foundational White Paper / Philosophical Framework}}
 
-
 % IMPORTANT: No \vspace inside these brackets
 \author{Djeff Bee\thanks{Correspondence: \href{mailto:info@meaningfulness.com.au}{info@meaningfulness.com.au}
 GitHub: \href{https://github.com/MeaningfulnessMediaGroup/MMG-Technical-Reports}{GitHub Repo}}}
 \affil{\textit{Principal Architect, Meaningfulness Media Group}}
-%\date{\today}
 \date{February 2, 2026}
+
 
 % --- DOCUMENT BEGINS ---
 \begin{document}
 
 \maketitle
-\vspace{-1em} % <--- TWEAK: Pulls Abstract up closer to Date
+\vspace{-1em} 
 
 
 % --- COPYRIGHT FOOTER BLOCK ---
@@ -119,22 +111,24 @@ We conclude that because the future is computationally irreducible for any compl
 \vspace{1em}
 \noindent \textbf{Keywords:} Causal Nihilism, Chaos Theory, Hard Determinism, Compatibilism, Agency Depth, Unpredictability Horizon, Computational Irreducibility, Information Theory, Free Will.
 
+
 % --- FOOTER AND HEADER SETTINGS ---
 \newpage
 \pagestyle{fancy}
 \thispagestyle{fancy}
 
 \fancyhf{}
-\fancyhead[L]{\footnotesize \texttt{MMG-TR-001}} % <--- Protocol ID in top left
-\fancyhead[R]{\footnotesize Section \thesection}     % <--- Current Section in top right
+\fancyhead[L]{\footnotesize \texttt{MMG-TR-001}} 
+\fancyhead[R]{\footnotesize Section \thesection}    
 \cfoot{
     \footnotesize Copyright \copyright\ 2026 Meaningfulness Media Group. \href{https://creativecommons.org/licenses/by/4.0/}{Licensed under CC BY 4.0} \\
     Page \thepage\ of \pageref{LastPage}
 }
-\renewcommand{\headrulewidth}{0.4pt} % Adds a thin line under the header
+\renewcommand{\headrulewidth}{0.4pt} 
 
 
-% --- SECTION 1 (Expanded) ---
+
+% --- SECTION 1 ---
 \section{Introduction: The Inference Error}
 The early 21st century has been defined by a convergence of two powerful epistemological trends: the unprecedented predictive fidelity of artificial intelligence and the mapping of neural correlates by neuroscience. Taken together, these advances have caused a resurgence of \textbf{Hard Determinism}—the philosophical position that human behavior is entirely explained by antecedent physical causes, making "choice" a retrospective illusion \citep{sapolsky2023}.
 
@@ -148,7 +142,8 @@ Methodologically, we are not trying to refute physical determinism or rely on me
 For a detailed defense of these boundary conditions and a refutation of metaphysical objections, \hyperref[app:steelmanning]{Appendix B}.
 
 
-% --- SECTION 2 (Expanded) ---
+
+% --- SECTION 2 ---
 \newpage
 \section{Methodological Foundations: The Axioms of the System}
 To dismantle the fallacy of fatalism, we must first establish a rigorous set of axioms that accept the scientific reality of the physical world while rejecting the logical leaps of the fatalist.
@@ -229,7 +224,9 @@ that agency is not merely a philosophical fact to be debated, but a \textbf{capa
 \subsection{Methodological Commitment to High-Resolution Ethics}
 Finally, we commit to a "High-Resolution" ethical framework. We recognize that if agency is a spectrum, then \textbf{Responsibility} must be proportional to Agency Depth. A system that intentionally reduces the $D_A$ of its users (via addictive algorithmic loops or social isolation) is not merely providing "entertainment"; it is technically committing an \textbf{Ontological Harm} by stripping the agent of their causal sovereignty. By establishing these axioms, we move the conversation from abstract morality to the quantifiable preservation of the human process. This ensures that the defense of meaning is grounded in the same rigorous systems theory used to build the technologies that currently threaten it.
 
-% --- SECTION 3 (Revised with Epistemic Distinction) ---
+
+
+% --- SECTION 3 ---
 \newpage
 \section{The Failure of Linear Extrapolation in Cognitive Systems}
 The fundamental error of Causal Nihilism is confusing the \textit{existence} of a future state with the \textit{accessibility} of that state. Before addressing the physical mechanics of chaos, we must operationalize this distinction to prevent the "Epistemic Fallacy."
@@ -281,6 +278,7 @@ where $T$ is a decision-discrimination threshold. In a system governed by a maxi
 Beyond $H_u$, the future state of the agent is \textbf{operationally undetermined for any external predictor}. This horizon represents the "Point of Information Exhaustion": the past no longer contains sufficient data to specify the future. Consequently, the agent is not "acting as if they are free" due to ignorance; they are performing the \textbf{necessary computation} required to resolve a \textbf{computationally uncomputed} probability space into a defined reality.
 
 
+
 % --- SECTION 4 ---
 \newpage
 
@@ -305,7 +303,7 @@ The depth of an agent’s agency is determined by three primary vectors:
 \subsubsection{The Relationship Between Depth and Reducibility}
 There exists an inverse relationship between Agency Depth and \textbf{Computational Reducibility}. As $D_A$ increases, the "Firewall" of the agent hardens; it becomes mathematically more difficult for any external observer to "shortcut" the agent's behavior. 
 
-\itemsep1em % Optional: Adds a bit of space between this paragraph and the next for clarity.
+\itemsep1em 
 Conversely, we identify a state of \textbf{Agency Collapse}, where external stressors, lack of connection, or algorithmic manipulation "shrink" the agent's \(D_A\). In this state, the agent reverts to a linear, reactive mode, rendering them functionally reducible and susceptible to systemic control. This transition from "Deep Agency" to "Shallow Reactivity" is the primary mechanism of Causal Nihilism in the modern era.
 
 \subsubsection{Agency as a Formalizable Research Objective}
@@ -356,7 +354,7 @@ This shift from "passive conduit for physical laws" to "salient author" provides
 
 
 
-% --- SECTION 5 (Expanded) ---
+% --- SECTION 5 ---
 \newpage
 \section{Discussion: The Diachronic Agent and the Refutation of Nihilism}
 The transition from a "Block Universe" model to a "Process Sovereignty" model has profound implications for how we interpret neuroscientific data and how we construct ethical responsibility.
@@ -391,7 +389,7 @@ The Unpredictability Horizon ($H_u$) exists not because the agent is "random", b
 
 
 
-% --- SECTION 6 (Conclusion) ---
+% --- SECTION 6 ---
 \newpage
 \section{Conclusion: The Dignity of the Process}
 The existence of a lawful, physically determined universe does not necessitate a world where choice is rendered meaningless by a pre-ordained fate. On the contrary, it reveals a cosmos of intricate causality—a universe whose future is infeasible to compute for any embedded predictor, generated moment by moment through the lawful unfolding of the present.
@@ -416,13 +414,13 @@ By rejecting Causal Nihilism, we re-establish the agent's role as a salient caus
 % --- BIBLIOGRAPHY ---
 \newpage
 \fancyhf{}
-\fancyhead[L]{\footnotesize \texttt{MMG-TR-001}} % <--- Protocol ID in top left
-\fancyhead[R]{\footnotesize References}     % <--- Current Section in top right
+\fancyhead[L]{\footnotesize \texttt{MMG-TR-001}} 
+\fancyhead[R]{\footnotesize References}     
 \cfoot{
     \footnotesize Copyright \copyright\ 2026 Meaningfulness Media Group. \href{https://creativecommons.org/licenses/by/4.0/}{Licensed under CC BY 4.0} \\
     Page \thepage\ of \pageref{LastPage}
 }
-\renewcommand{\headrulewidth}{0.4pt} % Adds a thin line under the header
+\renewcommand{\headrulewidth}{0.4pt} 
 
 \bibliographystyle{plainnat}
 \begin{thebibliography}{99}
@@ -479,13 +477,14 @@ Wolfram, S. (2002). \textit{A New Kind of Science}. Wolfram Media.
 \appendix
 
 \fancyhf{}
-\fancyhead[L]{\footnotesize \texttt{MMG-TR-001}} % <--- Protocol ID in top left
+\fancyhead[L]{\footnotesize \texttt{MMG-TR-001}} 
 \fancyhead[R]{\footnotesize Appendix \thesection} 
 \cfoot{
     \footnotesize Copyright \copyright\ 2026 Meaningfulness Media Group. All Rights Reserved. \\
     Page \thepage\ of \pageref{LastPage}
 }
-\renewcommand{\headrulewidth}{0.4pt} % Adds a thin line under the header
+\renewcommand{\headrulewidth}{0.4pt} 
+
 
 
 \section{Technical Glossary of Agency}
