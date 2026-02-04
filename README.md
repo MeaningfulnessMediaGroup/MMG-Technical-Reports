@@ -2,7 +2,7 @@
 
 [![License: CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-blue.svg)](https://creativecommons.org/licenses/by/4.0/)
 
-This repository hosts the **Speculative Ontological Engine (SOE) Framework** documentation, beginning with our foundational paper, **MMG-TR-001: The Illusion of Fatalism**.
+This repository hosts the foundational **Technical Reports** series of Meaningfulness Media Group, beginning with our first paper, **MMG-TR-001: The Illusion of Fatalism**.
 
 ## 📜 Overview: TR-001 Focus
 
@@ -14,6 +14,8 @@ The paper introduces and defines:
 *   **Salient Cause:** The level of explanation that matters for local outcomes.
 
 This document serves as the **Axiomatic Foundation** for the entire Meaningfulness Media Group (MMG) research program into Cognitive Sovereignty. For more about our broader mission, please visit our main site: [Meaningfulness Media Group](https://Meaningfulness.com.au).
+
+DOI: [10.5281/zenodo.18455937](https://doi.org/10.5281/zenodo.18455937).
 
 ---
 
@@ -47,4 +49,7 @@ We encourage contributions to the ongoing development of the framework, particul
 *   `/TR-002_draft/`: Work-in-progress drafts and mathematical sketches for the proofs of $D_A$. (Feedback most welcome here.)
 *   `/TR-003_draft/`: Initial conceptual models regarding the systemic erosion of agency.
 *   `/Citations/`: BibTeX file for all referenced material.
+
+
+
 
