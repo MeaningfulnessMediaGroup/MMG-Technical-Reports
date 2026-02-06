@@ -21,16 +21,12 @@
 \usepackage{float}
 \usepackage{microtype} 
 \usepackage{etoolbox}         
-
-\usepackage[hang]{footmisc}      % Standardizes footnote alignment
-\setlength{\footnotemargin}{1em} % Adjusts the gap between '*' and the text
-\usepackage[most]{tcolorbox}     % For the professional boxed look
-
-\usepackage[dvipsnames,table,xcdraw]{xcolor} % Loads the color engine with extra names
 \usepackage{listings}
+
+\usepackage[hang]{footmisc}     
+\usepackage[most]{tcolorbox}    
+\usepackage[dvipsnames,table,xcdraw]{xcolor} 
 \usepackage[colorlinks=true, linkcolor=NavyBlue, citecolor=NavyBlue, urlcolor=NavyBlue]{hyperref}
-
-
 
 \definecolor{jsonpurple}{rgb}{0.5,0,0.5}
 \definecolor{jsonorange}{rgb}{1,0.5,0}
@@ -56,10 +52,11 @@
 \onehalfspacing
 
 % --- SPACING SETTINGS ---
+\setlength{\footnotemargin}{1em} 
 \setlength{\parskip}{0.2em} 
 \preauthor{\begin{center}\large}
 \postauthor{\par\end{center}}
-\setlength{\affilsep}{-0.3em} 
+\setlength{\affilsep}{-0em} 
 
 
 % --- TITLE SETUP ---
@@ -67,10 +64,11 @@
 \title{\textbf{Functional Agency in Physical Systems}\\
     \large Defining Free Will via Computational Irreducibility and the Halting Problem\\
     \vspace{1.5em}
-    \small MMG Technical Report No. 2: \texttt{MMG-TR-002} \\
+    \small MMG Technical Report No. 2: MMG-TR-002 \\
     \small \textbf{Status:} \textit{Foundational Standard / Formal Model}}
 
-\author{Djeff Bee\thanks{Correspondence: \href{mailto:info@meaningfulness.com.au}{info@meaningfulness.com.au}}}
+\author{Djeff Bee\thanks{Correspondence: \href{mailto:info@meaningfulness.com.au}{info@meaningfulness.com.au} \ | \ \href{https://github.com/MeaningfulnessMediaGroup/MMG-Technical-Reports}{github.com/MeaningfulnessMediaGroup}}}
+
 \affil{\textit{Principal Architect, Meaningfulness Media Group}}
 \date{\today}
 %\date{February 3, 2026}
@@ -86,35 +84,40 @@
 \fancyhf{}
 \renewcommand{\headrulewidth}{0pt}
 \cfoot{
-    \footnotesize Copyright \copyright\ 2026 Meaningfulness Media Group. All Rights Reserved. \\
+    \footnotesize Copyright \copyright\ 2026 Meaningfulness Media Group. \href{https://creativecommons.org/licenses/by/4.0/}{CC BY 4.0} \\
     Page \thepage\ of \pageref{LastPage}
 }
 
 
 % --- ABSTRACT ---
 \begin{abstract}
+{
+\small
 \noindent
 Following the establishment of substrate-agnostic unpredictability in \cite{TR001}, this paper presents a formal computational model for internal human agency. We argue that "Free Will" is neither a mystical intervention nor a retrospective illusion, but a technical property of \textbf{Self-Referential Modeling Systems}. We propose its replacement with \textbf{Functional Agency}: a technical property of systems that possess an \textbf{Incomputability Firewall} against external reduction.
 
 Utilizing the \textbf{Halting Problem} \citep{turing1936} as a formal template for self-reference limits and the \textbf{Principle of Computational Irreducibility} \citep{wolfram2002}, we demonstrate a \textbf{Reflexive Prediction Barrier} that prevents any resource-bounded predictor from generating intervention-stable predictions of a complex agent without either equivalent computational cost or a violation of the agent’s deliberative integrity. We further expand the metric of \textbf{Agency Depth ($D_A$)}, first introduced in \cite{TR001}, as a function of \textit{Temporal Horizon}, \textit{Counterfactual Width}, and \textit{Historical Integration}. We define \textbf{Effective Agency ($A_e$)} to incorporate \textbf{Model Fidelity} as a calibration multiplier, representing the functional capacity of an agent to act as a \textbf{Salient Cause}.
 
 This model proves that sovereignty is not a metaphysical constant but a variable resource subject to environmental and cognitive constraints, providing the rigorous, non-dualistic foundation required for the \textbf{Meaningfulness Protocol} and the systemic defense of human dignity in an age of hyper-resolution predictive modeling.
+}
 \end{abstract}
 
 \vspace{1em}
-\noindent \textbf{Keywords:} Functional Agency, Agency Depth ($D_A$), Computational Irreducibility, Halting Problem, Disclosure-Stable Prediction (DSP), Reflexive Prediction, Effective Agency, Process Sovereignty.
-
-\newpage
-
+{
+\small
+\noindent \textbf{Keywords:} Free Will, Functional Agency, Effective Agency, Agency Depth, Computational Irreducibility, Halting Problem, Disclosure-Stable Prediction (DSP), Reflexive Prediction, Process Sovereignty, Self-Referential Systems, Predictive Modeling Limits.
+}
 
 % --- HEADER SETUP FOR BODY SECTIONS ---
 \newpage
 \pagestyle{fancy}
 \fancyhf{}
-\fancyhead[L]{\footnotesize \texttt{MMG-TR-002}}
+\renewcommand{\sectionmark}[1]{\markboth{#1}{}}
+\renewcommand{\subsectionmark}[1]{}
+\fancyhead[L]{\footnotesize MMG-TR-002}
 \fancyhead[R]{\footnotesize \nouppercase{\leftmark}}
 \cfoot{
-    \footnotesize Copyright \copyright\ 2026 Meaningfulness Media Group. All Rights Reserved. \\
+    \footnotesize Copyright \copyright\ 2026 Meaningfulness Media Group. \href{https://creativecommons.org/licenses/by/4.0/}{CC BY 4.0} \\
     Page \thepage\ of \pageref{LastPage}
 }
 \renewcommand{\headrulewidth}{0.4pt}
@@ -130,11 +133,35 @@ The central challenge of the 21st century is the lack of a rigorous, technical d
 
 This paper proposes a shift from \textit{metaphysical} debates to \textbf{Systems Engineering}. We treat the human agent as a high-resolution, self-modeling computational system. Our goal is to demonstrate that "freedom" is not a violation of physical law, but a specific, protected property of \textbf{Computational Irreducibility} \citep{wolfram2002}.
 
+% 1.1
 \subsection{Retiring the Binary: From "Free Will" to "Functional Agency"}
 We contend that "Free Will" is an \textbf{outdated binary term} that lacks the resolution required to model complex biological and artificial systems. In this framework, we formally retire the term in favor of \textbf{Functional Agency}.
 
 We define Functional Agency as the capacity of a self-modeling, autopoietic system \citep{maturana1980} to act as a local entropy-reduction engine through internal deliberation. Unlike the traditional binary view, Functional Agency is a non-mystical, substrate-agnostic property of a system’s internal state-transition. It describes the state in which a system functions as an \textbf{Irreducible Causal Origin}—a node where information must be processed internally to resolve the output, rather than merely transmitted or reflected.
 
+To fully appreciate the paradigm shift proposed by this framework, it is useful to contrast the Functional Agency model directly against the traditional "Free Will" construct it replaces. The following table delineates the core differences in nature, state, source, vulnerability, and teleological goal. This comparison is not merely semantic; it represents a fundamental move from a metaphysical debate to an engineering specification.
+
+
+\begin{table}[H]
+\centering
+\caption{Comparison of Agency Frameworks}
+\label{tab:agency_comparison}
+\renewcommand{\arraystretch}{1.5} 
+
+\begin{tabular}{|p{0.18\textwidth}|p{0.36\textwidth}|p{0.36\textwidth}|}
+\hline
+\textbf{Feature} & \textbf{"Free Will" (Traditional Binary)} & \textbf{Functional Agency Model} \\ \hline
+\textbf{Nature} & A metaphysical "power" or property. & A technical \textit{process} of computation. \\ \hline
+\textbf{State} & A binary switch (Yes / No). & A continuous gradient of depth ($D_A \in [0, 1]$). \\ \hline
+\textbf{Source} & Acausal "magic," a non-physical soul, or an illusion. & Computational Irreducibility and self-reference. \\ \hline
+\textbf{Vulnerability} & Undefined or framed as "sin" / "weakness of will." & Quantifiable \textbf{Agency Collapse} ($A_e \to 0$). \\ \hline
+\textbf{Goal} & To justify moral blame and responsibility. & To engineer and defend human sovereignty. \\ \hline
+\end{tabular}
+\end{table}
+
+As the table illustrates, the primary contribution of the Functional Agency model is its \textbf{operational utility}. Where the traditional model offers only a binary judgment, the scalar model provides a diagnostic framework. We can now identify and measure a state of \textbf{Agency Collapse}—a quantifiable failure mode that is invisible to a binary system. This allows us to move from assigning blame to engineering resilience, providing a concrete, non-mystical foundation for the defense of human sovereignty in an age of increasing algorithmic pressure.
+
+% 1.2
 \subsection{Alignment with the Four-Layer Taxonomy}
 To ensure methodological rigor and continuity with \cite{TR001}, we distinguish between four distinct systemic properties often conflated in the agency debate:
 
@@ -145,13 +172,18 @@ To ensure methodological rigor and continuity with \cite{TR001}, we distinguish 
     \item \textbf{Controllability (Agent Status):} A statement about influence. Is the agent the salient cause of the outcome?
 \end{enumerate}
 
+\newpage
 This framework does not require the rejection of physical determinism (Layer 1) or the introduction of ontic randomness. Instead, we demonstrate that \textbf{predictive accessibility} (Layer 2) and \textbf{compressibility} (Layer 3) fail within reflexive, irreducible, and resource-bounded systems. By establishing that the future is operationally incomputable, we preserve the reality of \textbf{local controllability} (Layer 4)—Functional Agency—without necessitating acausal "magic."
 
+This distinction is not merely academic; it is the central engineering move of the entire framework. By cleanly separating the unprovable ontic substrate from the testable epistemic and computational limits of any embedded observer, we relocate the problem of agency from irresolvable metaphysics into the domain of auditable, falsifiable engineering science. The following sections will build upon this foundation to construct a formal model of the agent's internal architecture.
+
+% 1.3
 \subsection{Claims and Non-Claims (Scope Guardrails)}
-To ensure precision, we explicitly delineate the scope of this model. This report \textbf{does not} claim metaphysical indeterminism, acausal intervention, or ontic randomness. It makes a specific \textbf{operational claim}: for physically embedded predictors subject to finite resource bounds, and for agents whose policies can condition on disclosed predictions (\textit{reflexive coupling}), there exists no universal, intervention-stable shortcut that derives the agent’s next action while preserving the agent’s decision-relevant degrees of freedom.
+To ensure precision, we explicitly delineate the scope of this model. This report \textbf{does not} claim metaphysical indeterminism, acausal intervention, or ontic randomness. It makes a specific \textbf{operational claim}: for physically embedded predictors subject to finite resource bounds, and for agents whose policies can condition on disclosed predictions (\textit{reflexive coupling}), there exists no universal, intervention-stable shortcut that derives the agent’s next action while preserving the agent’s decision-relevant degrees of freedom. We define this sovereignty-relevant target as \textbf{Disclosure-Stable Prediction (DSP)}. Any method that restores perfect predictability must do so by violating the agent's autonomy.
 
 The model is a statement about computability, coupling, and sovereignty under deployment constraints, not a metaphysical thesis about "uncaused choice."
 
+% 1.4
 \subsection{The Criterion of Process Sovereignty}
 The technical core of Functional Agency is the \textbf{Process Sovereignty Criterion}. We define a system $A$ as possessing sovereignty over an outcome $X$ when two conditions are met:
 
@@ -162,11 +194,21 @@ The technical core of Functional Agency is the \textbf{Process Sovereignty Crite
 
 The second condition is vital: it prevents the "Reductionist Shortcut" where a predictor "simplifies" an agent to make them more predictable. For the agent to remain a sovereign subject, the prediction must maintain the fidelity of the agent's complexity. If no such shortcut exists, then the system is \textbf{Computationally Irreducible}, and the process of deliberation is the only site where the outcome becomes \textbf{operationally available} to the manifold.
 
+% 1.5
 \subsection{Quantifying Sovereignty: The Role of Agency Depth ($D_A$)}
-By shifting from a metaphysical "switch" (Yes/No) to a technical "process," we can begin to quantify the magnitude of an agent's sovereignty. To do this, we utilize the scalar metric of \textbf{Agency Depth ($D_A$)}—first introduced in \cite{TR001}.
+By shifting from a metaphysical "switch" (Yes/No) to a technical "process," we can begin to quantify the magnitude of an agent's sovereignty. To do this, we utilize the scalar metric of \textbf{Agency Depth ($D_A$)}—first introduced in TR-001 \cite{TR001}.
+
+\begin{tcolorbox}[colback=gray!5,colframe=black!75,title=\textbf{Key Terminology}]
+\begin{itemize}
+    \item \textbf{Disclosure-Stable Prediction (DSP):} Can a prediction remain true even after the person being predicted is told what it is?
+    \item \textbf{Process Sovereignty:} Is an agent's internal thinking process the only way to determine their future, or can it be "shortcut" by an external model?
+    \item \textbf{Agency Depth ($D_A$):} A measure of the complexity of that internal process.
+\end{itemize}
+\end{tcolorbox}
 
 If Functional Agency describes the \textit{phenomenon} of self-directed computation, Agency Depth measures the \textit{resolution, range, and resilience} of that computation. This move allows us to transition from asking "Does man have free will?" to asking "What is the current Agency Depth of this system, and what environmental or cognitive factors are causing it to expand or collapse?"
 
+% 1.6
 \subsection{Contribution and Scope}
 This report contributes an operational definition of sovereignty for self-referential agents, establishing the following:
 \begin{itemize}
@@ -197,17 +239,20 @@ To move the discussion of agency beyond metaphysical ambiguity and into the real
     Agents can condition their internal state-transitions (policies) on the data gathered through Reflexive Access. The agent’s \textbf{Counterfactual Width} ($C_w$) is non-zero; they possess the computational capacity to simulate the predicted outcome, evaluate its desirability against internal homeostatic goals, and adjust internal weights to favor an alternative trajectory.
     
     \item \textbf{No External Bypass (The Integrity Constraint):} 
-    No external predictor may forcibly replace or "short-circuit" an agent’s internal deliberation without fundamentally altering the identity or functional integrity of that agent. If a predictor achieves accuracy by physically forcing the agent's hand (coercion) or lobotomizing the agent's capacity for counterfactuals (reduction), it has not \textit{predicted} the agent; it has \textit{controlled} the system. To bypass the process is to destroy the subject.
+    No external predictor may forcibly replace or "short-circuit" an agent’s internal deliberation without fundamentally altering the identity or functional integrity of that agent. Bypass is defined as any intervention that reduces \textbf{Counterfactual Width} ($C_w$) or \textbf{Temporal Horizon} ($T_h$) by disabling an agent’s simulation capacity, access, or update ability (e.g., coercion, addiction loops, informational deprivation). Permissible influence must supply information while preserving the agent’s capacity to deliberate and revise.
 \end{enumerate}
 
 
 
 
 % --- SECTION 3: ARCHITECTURE OF INCOMPUTABILITY ---
-
+\newpage
 \section[The Architecture of Incomputability]{The Architecture of Incomputability}
 
+To understand the architecture of this non-reducible process, we must be precise in our terminology. \textbf{Computational Irreducibility} \citep{wolfram2002} asserts that there is no procedure significantly cheaper than running the process itself. The \textbf{Incomputability Firewall} is the structural consequence of this and the Reflexive Access axiom: the system's output is \textit{incomputable} for an embedded observer attempting to generate \textbf{disclosure-stable prediction} across the agent's admissible internal states. Thus, \textit{incomputable} in this context means \textbf{"no universal shortcut for disclosure-stable prediction under the axioms,"} not "Turing-undecidable for the brain in general." This distinction ensures the model remains focused on the practical, sovereignty-relevant limits of predictive systems.
+
 Having established the axioms of the system, we now construct the formal proof of \textbf{Functional Agency}. We demonstrate that for any system satisfying Axioms A-D, perfect prediction is structurally unstable.
+
 
 \subsection{The Halting Problem as a Formal Template for Self-Reference}
 
@@ -217,36 +262,41 @@ Turing proved that no general algorithm can determine, for any arbitrary program
 
 A functional agent $A$ is a system that constructs an internal model $M_A$ of itself. If an external predictor $O$ attempts to compute the future state of $A$, it must simulate not only $A$’s biological substrate but also $A$’s internal model $M_A$. However, because $A$ is adaptive (Axiom C) and can condition its internal policy on the incoming prediction signal from $O$ (Axiom B), the computation enters an infinite recursive loop: $O$ simulates $A$ simulating $O$ simulating $A$. The primary impossibility driver is not the hardware limits of the brain, but this \textbf{reflexive informational coupling}.
 
+This reflexive informational coupling creates a logical \textbf{"hall of mirrors."} The predictor must model the agent, which is in turn modeling the predictor's potential output. Any attempt by the predictor to find a final, stable image of the agent's future choice collapses into infinite regression. This is not a failure of processing power; it is a structural feature of self-observation.
+
 This firewall ensures that the agent remains an \textbf{incomputable kernel} within the causal manifold; the only way to know the outcome of the agent's deliberation is to allow it to run to completion.
 
-\subsection{Proposition 1: The Reflexive Prediction Barrier}
+\vspace{-0.7em}
+\subsection{The Reflexive Prediction Barrier}
 
 The foundational proof of our model rests on the inherent instability of predicting recursive systems. To maintain logical clarity, we distinguish between the boundary and the status: the \textbf{Incomputability Firewall} represents the \textit{predictability boundary} (the epistemic and computational constraint), while \textbf{Process Sovereignty} represents the \textit{causal ownership criterion} (the requirement for counterfactual dependence and non-bypassability).
 
-\vspace{0.5em}
 \noindent \textbf{Setup and Assumptions:}
 Assume the agent's action space contains at least two admissible actions in the tested context ($|S| \ge 2$). Assume reflexive access delivers a prediction $\hat{a}(t+1)$ to the agent prior to action selection. We further assume a "contrarian" or "falsifying" policy class where, given $\hat{a}(t+1)$, the agent can select an alternative admissible action $a(t+1) \in S$ such that $a(t+1) \neq \hat{a}(t+1)$. 
 
 We define a resource functional $R(\cdot)$ denoting the total physical cost (time, energy, compute). The efficiency bound for a valid prediction is defined as $R(O \text{ predicts } A) \ll R(A \text{ deliberates})$.
-
-\vspace{1em}
+\vspace{0.3em}
 \begin{tcolorbox}[colback=gray!10,colframe=black,title=\textbf{Proposition 1 (Reflexive Prediction Barrier, scope-bounded)}]
 For any agent $A$ with reflexive access and a non-trivial admissible policy class, no physically embedded predictor $O$ can guarantee an intervention-stable perfect prediction across all admissible internal states—\textbf{unless it either}:
 \begin{enumerate}
     \item[(a)] Constrains $A$’s access to the prediction (Hiding the signal),
     \item[(b)] Constrains the class of policies available to $A$ (Reducing the agent), or
-    \item[(c)] Pays resource costs $R(O) \not\ll R(A)$ by running a full-fidelity simulation that effectively duplicates the agent (which may reintroduce the recursion loop).
+    \item[(c)] Pays resource costs $\mathbf{R(O) \ge R(A)}$ by running a full-fidelity simulation that effectively duplicates the agent (which may reintroduce the recursion loop).
 \end{enumerate}
 \end{tcolorbox}
-\vspace{1em}
+\vspace{0.3em}
 
 Under these conditions, we define the Firewall as a boundary where the agent's future state becomes \textbf{operationally non-derivable by any physically embedded observer} without running an equivalent computation or forcibly altering the agent's internal state.
 
+\vspace{-0.8em}
 \subsection{Intervention-Stable Prediction and the Cost of Compression}
 
+\vspace{-0.4em}
 A key ambiguity in agency debates is that "prediction" is often treated as a passive readout of a future that already exists. For self-referential systems, this is a category error. The relevant object is not raw forecast accuracy under hidden observation, but whether a predictor remains correct when its output becomes part of the agent's informational environment.
 
-\noindent \textbf{Definition (Disclosure-Stable Prediction):} A predictor $O$ is disclosure-stable for an agent $A$ if the prediction $\hat{a}(t+1)$ holds reliably even after being disclosed to $A$, without $O$ needing to suppress $A$'s access or restrict $A$'s degrees of freedom.
+\begin{tcolorbox}[colback=gray!10,colframe=black,title=\textbf{Definition}]
+\textbf{Disclosure-Stable Prediction:} A predictor $O$ is disclosure-stable for an agent $A$ if the prediction $\hat{a}(t+1)$ holds reliably even after being disclosed to $A$, without $O$ needing to suppress $A$'s access or restrict $A$'s degrees of freedom.
+\end{tcolorbox}
 
 This definition exposes the true "price" of predictive compression. If $O$ cannot remain correct under disclosure, it has not solved the agent; it has only solved an epistemically isolated surrogate. To regain stability, $O$ must engage in control operations (hiding the signal or restricting the policy). In other words, the path to stable prediction is structurally the path to \textbf{sovereignty loss}.
 
@@ -267,8 +317,8 @@ The human brain, characterized by high-order feedback loops and recursive self-m
     \item \textbf{The Functional Agency View (Resolution):} Time is the physical dimension required for the irreducible calculation of the future to occur. 
 \end{itemize}
 
-Because there is no shortcut to the agent’s internal state-transition, the future state remains \textbf{not physically extractable}—neither informationally nor decision-wise—from any prior state until the agent’s internal computation runs to completion. In this framework, the agent is not a passenger witnessing a script, but the \textbf{Salient Cause} of an outcome that is \textbf{not operationally available} to any physically embedded predictor until the agent produces it through the work of Resolution.
-
+Because there is no shortcut to the agent’s internal state-transition, the future state remains \textbf{not physically extractable}—neither informationally nor decision-wise—from any prior state until the agent’s internal computation runs to completion. 
+In this framework, the agent is not a passenger witnessing a script, but the \textbf{Salient Cause} of an outcome that is not operationally available to any physically embedded predictor until the agent produces it through the work of \textbf{Resolution} (the externally observable result of the internal deliberation process).
 
 
 
@@ -284,53 +334,73 @@ To provide a quantifiable framework for future system modeling, we distinguish b
 
 Critically, $A_e$ is not a claim about metaphysical freedom; it is a \textbf{comparative engineering index} intended to predict vulnerability to external steering under bounded resources.
 
+% 4.1
+\vspace{-0.4em}
 \subsection{Vector A: Temporal Horizon ($T_h$)}
-The \textbf{Temporal Horizon} measures the distance into the future that the agent’s internal simulator can project and evaluate.
+The \textbf{Temporal Horizon} measures the distance into the future that the agent’s internal simulator can project and evaluate. This vector is proxied by metrics such as \textit{delayed gratification performance} and the complexity of \textit{multi-step planning tasks}.
 \begin{itemize}
     \item \textbf{Low $T_h$ (Reactive State):} The agent is limited to "next-token" prediction or immediate reflex arcs. In this state, the agent is highly predictable and easily modeled by external algorithms.
     \item \textbf{High $T_h$ (Sovereign State):} The agent engages in \textbf{Teleological Planning}, evaluating consequences over months, years, or decades. 
 \end{itemize}
 As $T_h$ expands, the number of potential state-transitions \textbf{can grow combinatorially}, pushing the agent's \textbf{Unpredictability Horizon} \citep{TR001} further out and making external "shortcut" prediction computationally impossible.
 
+% 4.2
+\vspace{-0.4em}
 \subsection{Vector B: Counterfactual Width ($C_w$)}
-\textbf{Counterfactual Width} represents the "Search Space" resolution of the agent’s deliberation. It is the ability to simulate "worlds that do not exist" and evaluate them against the current state.
+\textbf{Counterfactual Width} represents the "Search Space" resolution of the agent’s deliberation. This vector is proxied by the \textit{breadth of generated alternative solutions} and \textit{counterfactual reasoning fluency}. It is the ability to simulate "worlds that do not exist" and evaluate them against the current state.
 A critical component of $C_w$ is the \textbf{"Veto" Power} \citep{dennett1984}. It is the capacity of the internal simulator to model a biological urge (System 1), predict a negative long-term outcome, and inhibit the action before execution. A wider $C_w$ indicates a more "irreducible" agent, as their output is a result of a complex pruning of possibilities rather than a linear reaction.
 
+% 4.3
 \subsection{Vector C: Historical Integration ($H_i$)}
-The third vector of the internal simulator is \textbf{Historical Integration}. This measures the degree to which an agent's unique, integrated history—comprising memory, values, and learned patterns—informs the present state. As established in \cite{TR001}, this historical "weight" prevents the agent from being a mere function of current environmental stimuli. In a high-$D_A$ agent, the initial conditions of a decision are not just the current sensory inputs, but the entire compressed dataset of the agent's life.
+The third vector of the internal simulator is \textbf{Historical Integration}. This measures the degree to which an agent's unique, integrated history informs the present state. $H_i$ is proxied by \textit{value stability under perturbation} and \textit{autobiographical coherence}. This historical "weight" prevents the agent from being a mere function of current environmental stimuli. It is fundamental to the construction of the temporally-extended self \citep{hofstadter2007}. In a high-$D_A$ agent, the initial conditions of a decision are not just the current sensory inputs, but the entire compressed dataset of the agent’s life. High $H_i$ prevents the agent from being a mere function of current environmental stimuli.
 
+% 4.4
 \subsection{Vector D: Model Fidelity ($R_m$)}
-The final vector, \textbf{Model Fidelity}, measures the degree of \textbf{Isomorphic Correspondence} between the agent's internal simulation and the external causal manifold. This is the technical requirement for what is colloquially termed "Truth"—defined in this framework as \textbf{empirical correspondence} between the agent's internal simulation and external reality.
+The final vector, \textbf{Model Fidelity}, measures the degree of \textbf{Isomorphic Correspondence} between the agent's internal simulation and the external causal manifold. This is the technical requirement for what is colloquially termed "Truth"—defined in this framework as empirical correspondence between the agent's internal simulation and external reality \citep{shannon1948}. $R_m$ is proxied by \textit{prediction error under controlled feedback} and \textit{epistemic foraging rate}.
 
-If an agent's internal model is based on false physics or skewed data (e.g., dogmatic scripts, low-resolution education, or conspiracy-based heuristics), $R_m$ collapses. Even if the agent has high processing power, they are "solving for a universe that does not exist." This decoupling results in \textbf{Causal Impotence}: the agent makes choices, but those choices fail to produce the intended effects in reality.
+If an agent's internal model is based on false physics or skewed data (e.g., dogmatic scripts, low-resolution education, or conspiracy-based heuristics), $R_m$ diminishes. Even if the agent has high processing power, they are "solving for a universe that does not exist." This decoupling results in \textbf{Causal Impotence}: the agent makes choices, but those choices fail to produce the intended effects in reality.
 
-\subsection{Proposition 2: The Fidelity Requirement}
-\textit{Agency is proportional to the accuracy of the agent's world-model. Sovereignty requires the ability to navigate the causal manifold (the continuous field of physical cause and effect) as it is physically structured, rather than as the agent is scripted or manipulated to perceive it.}
 
-\noindent \textbf{Elaboration.} Model Fidelity ($R_m$) is not a moral virtue and not a stylistic preference. It is an engineering coefficient that measures the degree of correspondence between an agent's internal simulator and the actual input-output regularities of the environment. In practical terms, $R_m$ can be interpreted as the inverse of systematic predictive error: a high-fidelity agent compresses the world into abstractions that preserve causally relevant structure, whereas a low-fidelity agent compresses the world into narratives that are computationally cheap but causally misaligned. Under Active Inference, this is precisely the difference between policies that reduce uncertainty by improving the generative model, and policies that reduce discomfort by protecting the model from correction \citep{friston2010}.
-
-This requirement is what separates \textit{deliberation} from \textit{effective deliberation}. An agent may exhibit high internal simulation volume (high $D_A$), generating many counterfactual futures with a long temporal horizon, yet still fail to act as a Salient Cause if those futures are simulated under incorrect dynamics. In such a regime, the system is not powerless because it cannot choose, but because it is choosing within an inaccurate phase-space. This yields a characteristic failure mode: \textbf{coherent impotence}. The agent can produce internally coherent reasons, plans, and counterfactuals, but the real world does not respond as predicted, so the causal impact of the agent's policy collapses.
-
-\noindent \textbf{Sovereignty Implication.} Because $A_e = D_A \cdot R_m$, the fidelity coefficient functions as a hard ceiling on realized agency. No amount of internal computation can compensate for a systematically distorted model if the distortion is adversarially maintained. This is the technical basis for why informational environments matter: if an external system can reliably control an agent's model update stream (education, media, social reinforcement, curated priors), it can reduce $R_m$ while leaving the agent's subjective experience of choice intact. The agent remains phenomenologically "free," yet becomes predictably steerable, because their internal simulator is solving the wrong problem.
-
-\noindent \textbf{Operational Note.} In empirical contexts, $R_m$ can be proxied by calibration performance: the statistical alignment between predicted outcomes and realized outcomes under intervention, not merely under passive observation. A sovereign agent is therefore characterized not only by deep simulation ($D_A$), but by a persistent tendency toward epistemic correction, i.e., an update policy that restores correspondence when prediction errors arise, rather than rationalizing them away.
-
+% 4.5
 \subsection{Synthesizing the Metric: Effective Agency ($A_e$)}
 We define \textbf{Agency Depth ($D_A$)} as the internal "Computational Volume" of the simulator. As a first-order approximation, we represent this as the product of the agent's temporal, counterfactual, and historical resolution:
+\vspace{-0.2em}
 \begin{equation}
     D_A := T_h \cdot C_w \cdot H_i
 \end{equation}
 To determine the agent's actual power to act as a Salient Cause within the causal manifold, we define \textbf{Effective Agency ($A_e$)} as the product of its internal depth and its world-model accuracy:
+\vspace{0em}
 \begin{equation}
     A_e = D_A \cdot R_m
 \end{equation}
+
+\vspace{-0.2em}
 \noindent \textbf{The Normalized Scale:} To ensure the metric remains well-posed and stable, each component ($T_h, C_w, H_i, R_m$) is treated as a normalized index within the range $[0, 1]$.
+\vspace{-0.2em}
 \begin{itemize}
     \item $A_e \to 1$: Represents a \textit{Sovereign Agent} with maximum predictive range, wide counterfactual search, and a perfectly calibrated world-model.
     \item $A_e \to 0$: Represents a \textit{Reducible System} characterized by either the collapse of the temporal horizon ($T_h \to 0$, reactive addiction) or the collapse of model accuracy ($R_m \to 0$, epistemic hallucination).
 \end{itemize}
-This formalization explains the technical mechanism of \textbf{Agency Collapse}. An agent may possess high hardware potential (high $D_A$), but if their world-model is sabotaged by dogmatic scripts or misinformation (Low $R_m$), their Effective Agency diminishes proportionally, rendering them causally impotent and computationally reducible to the external forces managing their information supply.
+\vspace{-0.2em}
+\noindent This formalization explains the technical mechanism of \textbf{Agency Collapse}. An agent may possess high hardware potential (high $D_A$), but if their world-model is sabotaged by dogmatic scripts or misinformation (Low $R_m$), their Effective Agency diminishes proportionally, rendering them causally impotent and computationally reducible to the external forces managing their information supply.
 
+
+
+% 4.6
+\subsection{Proposition 2: The Fidelity Requirement}
+\textit{Agency is proportional to the accuracy of the agent's world-model. Sovereignty requires the ability to navigate the causal manifold (the continuous field of physical cause and effect) as it is physically structured, rather than as the agent is scripted or manipulated to perceive it.}
+
+\textbf{Elaboration.} Model Fidelity ($R_m$) is not a moral virtue and not a stylistic preference. It is an engineering coefficient that measures the degree of correspondence between an agent's internal simulator and the actual input-output regularities of the environment. In practical terms, $R_m$ can be interpreted as the inverse of systematic predictive error: a high-fidelity agent compresses the world into abstractions that preserve causally relevant structure, whereas a low-fidelity agent compresses the world into narratives that are computationally cheap but causally misaligned. Under Active Inference, this is precisely the difference between policies that reduce uncertainty by improving the generative model, and policies that reduce discomfort by protecting the model from correction \citep{friston2010}.
+
+This requirement is what separates \textit{deliberation} from \textit{effective deliberation}. An agent may exhibit high internal simulation volume (high $D_A$), generating many counterfactual futures with a long temporal horizon, yet still fail to act as a Salient Cause if those futures are simulated under incorrect dynamics. In such a regime, the system is not powerless because it cannot choose, but because it is choosing within an inaccurate phase-space. This yields a characteristic failure mode: \textbf{coherent impotence}. The agent can produce internally coherent reasons, plans, and counterfactuals, but the real world does not respond as predicted, so the causal impact of the agent's policy collapses.
+
+\textbf{Sovereignty Implication.} Because $A_e = D_A \cdot R_m$, the fidelity coefficient functions as a hard ceiling on realized agency. No amount of internal computation can compensate for a systematically distorted model if the distortion is adversarially maintained. This is the technical basis for why informational environments matter: if an external system can reliably control an agent's model update stream (education, media, social reinforcement, curated priors), it can reduce $R_m$ while leaving the agent's subjective experience of choice intact. The agent remains phenomenologically "free," yet becomes predictably steerable, because their internal simulator is solving the wrong problem.
+
+\textbf{Operational Note.} In empirical contexts, $R_m$ can be proxied by calibration performance: the statistical alignment between predicted outcomes and realized outcomes under intervention, not merely under passive observation. A sovereign agent is therefore characterized not only by deep simulation ($D_A$), but by a persistent tendency toward epistemic correction, i.e., an update policy that restores correspondence when prediction errors arise, rather than rationalizing them away.
+
+
+% 4.7
+\vspace{-0.7em}
 \subsection{Bottlenecks and Non-Linear Coupling}
 The multiplicative structure of $A_e$ is not merely aesthetic; it encodes a critical systems principle: agency is \textbf{bottleneck-dominated}. In practice, sovereignty collapses not when average capability declines, but when any single agency vector approaches zero. A system with vast counterfactual imagination ($C_w$ high) but near-zero temporal horizon ($T_h \approx 0$) behaves like an impulsive optimizer; likewise, a long-horizon planner with low model fidelity ($R_m \approx 0$) can become strategically elaborate while remaining causally impotent.
 
@@ -340,6 +410,8 @@ To make this diagnostic logic explicit, define the \textbf{Agency Bottleneck Ind
 \end{equation}
 When $B_A$ is small, the system is vulnerable to external steering regardless of the magnitudes of the other terms.
 
+%4.8
+\vspace{-0.7em}
 \subsection{Weighted Calibration (Optional Extension)}
 In real deployments, different environments weight the vectors differently. For example, high-stakes engineering contexts may privilege fidelity ($R_m$) over width ($C_w$), while creative contexts may privilege width and historical integration. This motivates an optional weighted generalization:
 \begin{equation}
@@ -347,6 +419,8 @@ In real deployments, different environments weight the vectors differently. For 
 \end{equation}
 This preserves the bottleneck behavior while allowing domain-specific calibration. Importantly, weighting does not rescue a collapsed dimension: if any component approaches zero, sovereignty still tends toward zero.
 
+% 4.9
+\vspace{-0.7em}
 \subsection{Interpretation: Agency Collapse as a Detectable Failure Mode}
 With these definitions, \textbf{Agency Collapse} can be operationally characterized as a regime where $A_e$ (or $B_A$) exhibits sustained low values under stable external conditions. This reframes debates about "freedom” into a measurable systems question: \textit{Which component is failing, and what is the cheapest intervention that raises the bottleneck?} In this sense, $A_e$ functions as a comparative engineering index: it does not adjudicate metaphysics, but it predicts the system's susceptibility to compression, steering, and loss of process sovereignty.
 
@@ -367,27 +441,28 @@ Drawing on the biological principles of autopoiesis—the self-maintenance of a 
 \subsection{Epistemic Action: The Biological Drive for Model Fidelity ($R_m$)}
 Active Inference posits that agents select actions based on two components:
 \begin{enumerate}
-    \item \textbf{Pragmatic Value:} Actions that fulfill immediate biological needs (Level 1-2 thinking, as defined in the MMG cognitive verticality hierarchy).
-    \item \textbf{Epistemic Value:} Actions that reduce uncertainty and provide information to calibrate the internal model (Level 3-7 thinking).
+    \item \textbf{Pragmatic Value:} Actions that fulfill immediate biological needs, corresponding to lower-level needs in Maslow's hierarchy, such as physiological and safety (Level 1-3 thinking, as defined in the MMG cognitive verticality hierarchy; see \autoref{app:thinking_levels}).
+    \item \textbf{Epistemic Value:} Actions that reduce uncertainty and provide information to calibrate the internal model, corresponding to higher-level needs in Maslow's hierarchy, such as esteem and self-actualization (Level 4-7 thinking; see \autoref{app:thinking_levels}).
 \end{enumerate}
 
 This provides the biological justification for our focus on Model Fidelity ($R_m$). A sovereign agent does not merely seek comfort; it engages in \textbf{Epistemic Foraging}—the pursuit of STEM, history, and deep connection—to ensure its internal simulator remains coupled with reality. High $D_A$ agents prioritize Epistemic Value because a more accurate model provides a longer \textit{Unpredictability Horizon} against environmental threats.
 
+\newpage
 \subsection{The "Dark Room" Paradox and the Requirement of Meaning}
 A common critique of the FEP is the "Dark Room Problem": if an agent simply wants to minimize surprise, it should stay in a dark, silent room. However, high-complexity agents (humans) possess \textbf{Preference Priors} for growth, connection, and complexity.
 
-We argue that \textbf{Meaningfulness} is the neurobiological signal that a selected policy is successfully expanding the agent's \textbf{Agency Depth}. Despair and ontological crisis (we will come back to this in TR-005, \hyperref[app:research_program]{Appendix E}) occur when an agent is trapped in a "Pathological Minimum"—a state where the environment (e.g., predatory algorithms) provides enough low-level rewards to satisfy pragmatic needs but starves the agent of the epistemic complexity required to maintain sovereignty.
+We argue that \textbf{Despair} and \textbf{Ontological Crisis} (as defined in subsequent paper, see TR-005 in \hyperref[app:research_program]{Appendix G}) are the system's failure signals indicating an inability to expand the agent's \textbf{Agency Depth}. This crisis occurs when an agent is trapped in a "Pathological Minimum"—a state where the environment (e.g., predatory algorithms) provides enough low-level rewards to satisfy pragmatic needs but starves the agent of the epistemic complexity required to maintain sovereignty.
 
 
 \subsection{Agency as an Evolutionary Firewall}
 
-The principles of Active Inference suggest that the development of a high-resolution internal model ($R_m$) and a deep capacity for deliberation ($D_A$) is not merely a cognitive feature but an evolutionary imperative. Evolution has consistently selected for systems capable of maintaining their Markov Blanket against environmental entropy. We posit that high \textbf{Functional Agency} is the ultimate expression of this drive, functioning as an \textbf{Evolutionary Firewall}.
+The principles of Active Inference \citep{friston2010} suggest that the development of a high-resolution internal model ($R_m$) and a deep capacity for deliberation ($D_A$) is not merely a cognitive feature but an evolutionary imperative. Evolution has consistently selected for systems capable of maintaining their \textbf{Markov Blanket} against environmental entropy. We posit that high \textbf{Functional Agency} is the ultimate expression of this drive, functioning as an \textbf{Evolutionary Firewall}.
 
 A species that is computationally simple and predictable is easily "solved" by predators or changing environmental conditions. Its behavioral patterns can be modeled and exploited. For example, a predator can learn the fixed escape trajectory of its prey. In contrast, an agent with high Agency Depth can generate novel, irreducible, and context-dependent solutions to survival problems. It can simulate counterfactuals ("What if the predator is waiting behind that rock?"), integrate historical data ("This terrain was dangerous last season"), and project long-term consequences, making its next move fundamentally incomputable to an adversary.
 
 Therefore, the metabolic cost of maintaining a large, deliberative brain is justified by the survival advantage conferred by its irreducibility. The human system, by maximizing its $D_A$, ensures it remains a "moving target" for the entropy of the universe. 
 
-This evolutionary perspective provides a stark warning for the algorithmic age, as explored we will explore in the next paper (TR-003, \hyperref[app:research_program]{Appendix E}). If we allow external systems to reduce our agency by outsourcing our deliberation and simplifying our models, we are not just giving up a philosophical preference for freedom; we are systematically dismantling the very evolutionary firewall that has ensured our species' survival. The defense of agency is, in the most literal sense, the continuation of the evolutionary mandate to persist as a complex, self-organizing system.
+This evolutionary perspective provides a stark warning for the algorithmic age, as we will explore in the next paper (TR-003, \hyperref[app:research_program]{Appendix G}). If we allow external systems to reduce our agency by outsourcing our deliberation and simplifying our models, we are not just giving up a philosophical preference for freedom; we are systematically dismantling the very evolutionary firewall that has ensured our species' survival. The defense of agency is, in the most literal sense, the continuation of the evolutionary mandate to persist as a complex, self-organizing system.
 
 
 
@@ -406,23 +481,26 @@ Because the infant's responses are driven entirely by immediate biological needs
 We redefine the role of the parent from a mere protector to an \textbf{Agency Architect}. The primary function of the guardian is to manage the agent's transition through the \textbf{Agency Gradient} \citep{TR001}.
 
 \begin{itemize}
-    \item \textbf{Initialization Phase:} The parent provides the "Thermodynamic Scaffolding" [this will be defined in a subsequent paper (\hyperref[app:research_program]{Appendix E})] required to keep the system stable while the internal simulator initializes.
+    \item \textbf{Initialization Phase:} The parent provides the "Thermodynamic Scaffolding" [this will be defined in a subsequent paper (\hyperref[app:research_program]{Appendix G})] required to keep the system stable while the internal simulator initializes.
     \item \textbf{Calibration Phase:} The parent facilitates Model Fidelity ($R_m$) by providing accurate world-data (STEM, history, logic) and shielding the agent from "Epistemic Hallucinations" or low-resolution dogmas.
     \item \textbf{Decoupling Phase:} The parent performs \textbf{Autonomous Offboarding}—the deliberate and incremental removal of external constraints, forcing the child to run its own internal deliberation loops to resolve conflicts.
 \end{itemize}
 
-A parent's success is not measured by the child's "obedience" (which is merely the maintenance of reducibility), but by the child's \textbf{Incomputability}. The goal is to produce an adult whose internal processing is so complex that even the parent can no longer "shortcut" or predict their choices.
+A parent's success is not measured by the child's "obedience" (which is merely the maintenance of reducibility), but by the child's \textbf{Effective Agency}. This is a dual objective: 1) producing an autonomous adult with high Agency Depth ($D_A$), whose internal processing is so complex that external systems cannot "shortcut" or predict their choices. 2) To instill a high-fidelity world-model ($R_m$) grounded in pro-social values, ethical principles, and empirical correspondence. 
+
+The ultimate goal is not merely to create an agent who is \textit{irreducible}, but one who is also \textit{benevolent and causally effective}. An agent with high $D_A$ but low $R_m$ is a danger to themselves and society—a powerful engine with no steering. Therefore, the architectural task of the parent is to build both the engine of agency and the moral compass that guides it.
 
 \subsection{The Recursive Ascent: Achieving Causal Decoupling}
 The emergence of "No" in early childhood marks the first successful \textbf{Causal Decoupling}. It is the moment the agent's internal state-transition overrides an external command. This represents the first entry into the \textbf{Incomputability Firewall}.
 
 As the agent ages, the integration of unique history (Vector C) and the expansion of the temporal horizon (Vector A) create a "Compound Interest" of agency. By adulthood, the $D_A$ should reach a "Super-Critical" state where the agent acts as an independent \textbf{Salient Cause}.
 
-\subsection{Table 1: The Lifecycle of Agency Depth ($D_A$)}
-This section operationalizes the developmental claim that Functional Agency is an acquired systems property, not a binary endowment. We model the human lifecycle as a trajectory through regimes of predictability, where Agency Depth ($D_A$) typically increases as internal simulation capacity and calibration mature, then can later degrade under dependency or impairment. Table 1 summarizes the qualitative mapping between developmental stage, predictability, and causal status. This mapping is descriptive and intended as a scaffold for later empirical proxies.
+\subsection{The Lifecycle of Agency Depth ($D_A$)}
+This section operationalizes the developmental claim that Functional Agency is an acquired systems property, not a binary endowment. We model the human lifecycle as a trajectory through regimes of predictability, where Agency Depth ($D_A$) typically increases as internal simulation capacity and calibration mature, then can later degrade under dependency or impairment. Table 2 summarizes the qualitative mapping between developmental stage, predictability, and causal status. This mapping is descriptive and intended as a scaffold for later empirical proxies.
 
 \begin{table}[H]
 \centering
+\caption{The relationship between developmental stage and computational sovereignty.}
 \begin{tabular}{|l|l|l|l|}
 \hline
 \textbf{Stage} & \textbf{Agency Depth ($D_A$)} & \textbf{Predictability} & \textbf{Causal Status} \\ \hline
@@ -431,11 +509,10 @@ Adolescence & Expanding & Fluctuating & Bootstrapping Agent \\ \hline
 Adulthood & Peak Potential & Low (Incomputable) & Sovereign Origin \\ \hline
 Senility/Dependency & Collapsing & Increasing & Re-Reducible System \\ \hline
 \end{tabular}
-\caption{The relationship between developmental stage and computational sovereignty.}
 \end{table}
 
 \subsection{The Threat of Systemic Infantilization}
-We conclude this section by noting that the lifecycle of agency is reversible. As we will explore in the next paper (TR-003, \hyperref[app:research_program]{Appendix E}), the modern Attention Economy functions as a form of \textbf{Systemic Infantilization}. By making life "frictionless" and outsourcing human decision-making to predictive algorithms, society risks returning the adult agent to a state of dependency and reducibility—effectively collapsing the $D_A$ built over a lifetime of maturation.
+We conclude this section by noting that the lifecycle of agency is reversible. As we will explore in the next paper (TR-003, \hyperref[app:research_program]{Appendix G}), the modern Attention Economy functions as a form of \textbf{Systemic Infantilization}. By making life "frictionless" and outsourcing human decision-making to predictive algorithms, society risks returning the adult agent to a state of dependency and reducibility—effectively collapsing the $D_A$ built over a lifetime of maturation.
 
 
 
@@ -477,6 +554,9 @@ In an age where AI can shortcut the \textit{product} of human thought (essays, a
 
 The Meaningfulness Media Group and the planned Meaningfulness Foundation are dedicated to the preservation of this "Human Brand." Our mission is to foster the cognitive verticality and relational scaffolding required to ensure that human action remains incomputable to the machines we have built to serve us. By defining agency not as a metaphysical mystery but as a quantifiable, defensible, and cultivatable property of complex systems, we provide the engineering standards for the survival of human dignity in the algorithmic age.
 
+\subsection{Agency Hygiene: The Practice of Maintaining Irreducibility}
+
+The principles established in this report imply a prescriptive mandate. If agency is a variable resource, its preservation requires a conscious practice we term \textbf{Agency Hygiene}: the daily, intentional cultivation of the vectors of Agency Depth. This involves actively engaging in \textit{Epistemic Foraging} to calibrate one's world-model ($R_m$), prioritizing long-term goals to expand the Temporal Horizon ($T_h$), practicing counterfactual thinking to widen the deliberative search space ($C_w$), and reinforcing core values to strengthen Historical Integration ($H_i$) against short-term algorithmic nudges. Agency Hygiene is the personal protocol required to pass the Sovereignty Turing Test, day after day, in an environment designed to induce computational reducibility.
 
 
 % --- SECTION 8: CONCLUSION ---
@@ -494,8 +574,7 @@ This report has established three definitive conclusions:
 
 Ultimately, we are not "born free"; we are born with the potential to \textbf{become irreducible}. The human lifecycle is an "autonomous offboarding" process that requires specific socio-economic and cognitive scaffolding to reach completion. If we allow our deliberative choice-space to be "shortcut" by predictive models, we are not merely losing a philosophical ideal; we are undergoing a technical collapse of our status as a \textbf{Salient Cause}.
 
-The \textbf{Meaningfulness Media Group} and the planned \textbf{Meaningfulness Foundation} are dedicated to the preservation of this "Human Brand." By operationalizing the \textbf{Meaningfulness Protocol}, we provide the engineering standards to restore $D_A$ in populations currently suffering from the systemic crisis of "State A" (Ontological Shock). The defense of human meaning is the most critical systems-engineering project of our era. We are the weavers of a future that remains \textbf{not decision-available} to the manifold until we resolve it; let us ensure our calculation remains our own.
-
+The \textbf{Meaningfulness Media Group} and the planned \textbf{Meaningfulness Foundation} are dedicated to the preservation of this "Human Brand." By operationalizing the \textbf{Meaningfulness Protocol}, we aim to provide the engineering standards to restore $D_A$ in populations facing the \textbf{Agency Collapse} caused by systemic reduction. The defense of human meaning is the most critical systems-engineering project of our era. We are the weavers of a future that remains \textbf{not decision-available} to the manifold until we resolve it; let us ensure our calculation remains our own.
 
 
 
@@ -503,10 +582,10 @@ The \textbf{Meaningfulness Media Group} and the planned \textbf{Meaningfulness F
 % --- BIBLIOGRAPHY ---
 \newpage
 \fancyhf{}
-\fancyhead[L]{\footnotesize \texttt{MMG-TR-002}}
+\fancyhead[L]{\footnotesize MMG-TR-002}
 \fancyhead[R]{\footnotesize References}
 \cfoot{
-    \footnotesize Copyright \copyright\ 2026 Meaningfulness Media Group. All Rights Reserved. \\
+    \footnotesize Copyright \copyright\ 2026 Meaningfulness Media Group. \href{https://creativecommons.org/licenses/by/4.0/}{CC BY 4.0} \\
     Page \thepage\ of \pageref{LastPage}
 }
 \renewcommand{\headrulewidth}{0.5pt}
@@ -522,7 +601,7 @@ The \textbf{Meaningfulness Media Group} and the planned \textbf{Meaningfulness F
 \bibitem[Bach(2015)]{bach2015}
 Bach, J. (2015). \textit{Modeling Consciousness, Ethics and Aesthetics}. [Computational Architecture for Cognition].
 
-\bibitem[Bee(2026a)]{TR001}
+\bibitem[Bee(2026)]{TR001}
 Bee, D. (2026). "The Illusion of Fatalism: Distinguishing Causal Determinism from Pre-Destination in Complex Systems". \textit{MMG Technical Report No. 1: MMG-TR-001}. Meaningfulness Media Group.
 
 \bibitem[Dennett(1984)]{dennett1984}
@@ -537,14 +616,20 @@ Gödel, K. (1931). "On Formally Undecidable Propositions of Principia Mathematic
 \bibitem[Hofstadter(2007)]{hofstadter2007}
 Hofstadter, D. R. (2007). \textit{I Am a Strange Loop}. Basic Books.
 
+\bibitem[Kegan(1982)]{kegan1982}
+Kegan, R. (1982). \textit{The Evolving Self: Problem and Process in Human Development}. Harvard University Press.
+
 \bibitem[Landauer(1961)]{landauer1961}
 Landauer, R. (1961). "Irreversibility and heat generation in the computing process". \textit{IBM Journal of Research and Development}, 5(3), 183--191.
 
+\bibitem[Loevinger(1976)]{loevinger1976}
+Loevinger, J. (1976). \textit{Ego Development: Conceptions and Theories}. Jossey-Bass.
+
 \bibitem[Maturana and Varela(1980)]{maturana1980}
-Maturana, H. R., & Varela, F. J. (1980). \textit{Autopoiesis and Cognition: The Realization of the Living}. Reidel.
+Maturana, H. R., \& Varela, F. J. (1980). \textit{Autopoiesis and Cognition: The Realization of the Living}. Reidel.
 
 \bibitem[Grunberg and Modigliani(1954)]{grunberg1954}
-Grunberg, E., & Modigliani, F. (1954). "The Predictability of Social Events". \textit{Journal of Political Economy}, 62(6), 465--478.
+Grunberg, E., \& Modigliani, F. (1954). "The Predictability of Social Events". \textit{Journal of Political Economy}, 62(6), 465--478.
 
 \bibitem[Pearl(2009)]{pearl2009}
 Pearl, J. (2009). \textit{Causality: Models, Reasoning, and Inference}. Cambridge University Press.
@@ -582,22 +667,24 @@ Yeung, K. (2017). "'Hypernudge': Big Data as a mode of regulation by design". \t
 \end{thebibliography}
 } % End the local group
 
-% --- Appendices ---
+
+
+% --- APPENDICES ---
 \newpage
 \appendix
 
 % --- HEADER SETUP FOR APPENDICES SECTIONS ---
 \fancyhf{}
-\fancyhead[L]{\footnotesize \texttt{MMG-TR-002}}
+\fancyhead[L]{\footnotesize MMG-TR-002}
 \fancyhead[R]{\footnotesize Appendix \thesection} 
 \cfoot{
-    \footnotesize Copyright \copyright\ 2026 Meaningfulness Media Group. All Rights Reserved. \\
+    \footnotesize Copyright \copyright\ 2026 Meaningfulness Media Group. \href{https://creativecommons.org/licenses/by/4.0/}{CC BY 4.0} \\
     Page \thepage\ of \pageref{LastPage}
 }
 \renewcommand{\headrulewidth}{0.4pt} 
 
 
-% --- Appendix A ---
+% --- APPENDIX A: Glossary ---
 \section{Technical Glossary of Functional Agency}
 \label{app:glossary}
 
@@ -619,7 +706,8 @@ To ensure clarity and prevent terminological ambiguity, this appendix provides o
     \item[Epistemic Foraging] The process, central to Active Inference, by which an agent actively seeks information and engages with its environment to reduce uncertainty and calibrate its internal world-model ($R_m$). This is the biological drive for truth-seeking.
 
     \item[Functional Agency] The technical replacement for the outdated binary term "Free Will." It is defined as the capacity of a self-referential, autopoietic system to act as a local entropy-reduction engine. It is a substrate-agnostic property of a system's internal state-transition.
-    
+
+\newpage
     \item[Historical Integration ($H_i$)] A vector of $D_A$ measuring the degree to which an agent's unique, integrated history—comprising memory, values, and learned patterns—informs its present state. High $H_i$ prevents the agent from being a mere function of immediate environmental stimuli.
     
     \item[Incomputability Firewall] The \textit{predictability boundary} established by the recursion barrier. It defines the epistemic and computational constraint where an agent’s future becomes operationally non-derivable by any physically embedded observer without that observer executing a computation of equal depth to the agent's own deliberation.
@@ -643,11 +731,11 @@ To ensure clarity and prevent terminological ambiguity, this appendix provides o
 
 
 
-% --- APPENDIX B: STEEL-MANNING ---
+% --- APPENDIX B: Limitations ---
 \newpage
 \section{Limitations and Anticipated Objections (Steel-Manning)}
 
-To maintain the rigor of the Functional Agency Model (FAM), we explicitly address five primary counter-arguments. By resolving these through a systems-engineering lens, we ensure that the framework remains unassailable to both reductionist and metaphysical critics.
+To maintain the rigor of the Functional Agency Model (FAM), we explicitly address six primary counter-arguments. By resolving these through a systems-engineering lens, we ensure that the framework remains unassailable to both reductionist and metaphysical critics.
 
 \subsection{Objection (Ontic vs. Epistemic)}
 \textit{"Unpredictability is merely a statement about observer ignorance. Just because a future choice is incomputable doesn't mean it isn't ontically fixed by antecedent causes."}
@@ -674,7 +762,6 @@ To maintain the rigor of the Functional Agency Model (FAM), we explicitly addres
 
 \noindent \textbf{Response:} Our model is not "carbon-chauvinistic." If an artificial system truly meets the criteria of \textbf{Autopoiesis} (self-maintenance) and possesses \textbf{Endogenous Stakes} (real consequences for its own Markov Blanket), it would technically join the agency spectrum. However, current LLMs lack these properties; they are prompted, not purposeful. We distinguish between \textbf{Trained Stochasticity} (AI) and \textbf{Process Sovereignty} (Agents).
 
-
 \subsection{Objection (The Post-Hoc Veto):}
 \textit{"Neuroscientific evidence suggests the 'conscious will' is a post-hoc rationalization. Since the readiness potential precedes conscious awareness of a decision, even the 'Veto Power' is merely part of the determined causal chain, not a moment of genuine agency."}
 
@@ -685,12 +772,12 @@ Modern research re-characterizes the readiness potential not as a decision, but 
 
 
 
-% --- Appendix C ---
+% --- APPENDIX C: Formalization ---
 \newpage
 
 \section{Formalization of Agency Metrics (Conceptual)}
 
-To facilitate future system modeling in subsequent Technical Reports (\hyperref[app:research_program]{Appendix E}), we provide the following conceptual definitions for the vectors of sovereignty.
+To facilitate future system modeling in subsequent Technical Reports (\hyperref[app:research_program]{Appendix G}), we provide the following conceptual definitions for the vectors of sovereignty.
 
 \subsection{The $A_e$ Formula}
 We define \textbf{Effective Agency ($A_e$)} as a comparative engineering index representing the functional capacity of an agent to influence the causal manifold. $A_e$ serves as a technical diagnostic for predicting an agent's vulnerability to external steering (e.g., algorithmic nudging or systemic reduction).
@@ -722,7 +809,7 @@ If an external model $O$ can find the answer faster than the agent $A$ can live 
 
 
 
-% --- Appendix D ---
+% --- APPENDIX D: Operationalization ---
 \newpage
 
 \section{Operationalization and Falsifiability}
@@ -730,6 +817,45 @@ If an external model $O$ can find the answer faster than the agent $A$ can live 
 To ensure that the Functional Agency Model (FAM) functions as a rigorous scientific framework, we propose the following proxy measurements and falsifiable tests. These metrics allow for the empirical assessment of Agency Depth ($D_A$) and the detection of Agency Collapse in both biological and artificial systems.
 
 \noindent \textit{Note: The numerical thresholds below (e.g., $>95\%$, $>2$ standard deviations) are illustrative engineering cutoffs intended for operational audits. In empirical deployments, they must be calibrated to task domain, measurement noise, and ethical constraints.}
+
+\subsection{Mapping to Established Empirical Paradigms}
+The vectors formalized in this model are designed to align with measurable constructs in existing psychological and cognitive science literatures. \textbf{Temporal Horizon ($T_h$)} correlates directly with metrics of \textit{delay discounting} and the complexity of \textit{model-based planning tasks} in computational psychiatry. \textbf{Counterfactual Width ($C_w$)} is operationalized through tests of \textit{divergent thinking} and the fidelity of \textit{episodic future thinking}. Furthermore, the integrity of the \textbf{Historical Integration ($H_i$)} vector is assessed through \textit{value stability assays} and metrics of narrative coherence under informational perturbation. This alignment ensures that the Functional Agency Model is falsifiable and can be implemented using established experimental protocols.
+
+% --- Diagram ---
+
+\subsection{The Functional Agency Model (FAM) Schematic}
+To lower the cognitive load for first-time readers, the relationship between Agency Depth ($D_A$) and Effective Agency ($A_e$) is illustrated in Figure \ref{fig:fam_schematic}. The model emphasizes that $A_e$ is not defined by average capacity but by the constraints of its lowest component, reflecting the bottleneck-dominated principle.
+
+\begin{figure}[H]
+\centering
+\small 
+\renewcommand{\arraystretch}{1.2} 
+
+\begin{tabular}{|c|}
+\hline
+\textbf{The Sovereign Agent: The Process Irreducibility Stack} \\ 
+\hline
+\multicolumn{1}{|c|}{\textbf{A\textsubscript{e}} $\leftarrow$ Effective Agency} \\ 
+
+\multicolumn{1}{|c|}{\textbf{Calibration Multiplier ($\mathbf{R_m}$):} Model Fidelity (Accuracy)} \\ 
+\hline
+\multicolumn{1}{|c|}{\textbf{Agency Depth ($\mathbf{D_A}$)} $\mathbf{= T_h \cdot C_w \cdot H_i}$} \\ 
+
+\multicolumn{1}{|c|}{\textbf{Effective Agency ($\mathbf{A_e}$)} $\mathbf{= D_A \cdot R_m}$} \\ 
+\hline
+\multicolumn{1}{|c|}{\textbf{Internal Vectors (The Irreducible Core)}} \\
+\hline
+% --- row uses explicit vertical separators for the vectors ---
+\begin{tabular}{c|c|c} 
+\textbf{T\textsubscript{h} (Temporal Horizon)} & \textbf{C\textsubscript{w} (Counterfactual Width)} & \textbf{H\textsubscript{i} (Historical Integration)} \\
+\end{tabular} \\
+\hline
+\end{tabular}
+
+\caption{The Functional Agency Model (FAM) Schematic. Effective Agency ($A_e$) is the final output of the agent, defined as the product of its internal capacity ($D_A$) and its external calibration ($R_m$). The model is governed by the bottleneck logic: $A_e \approx B_A = \min\{T_h, C_w, H_i, R_m\}$.}
+\label{fig:fam_schematic}
+\end{figure}
+
 
 \subsection{Proxy Metrics for Agency Vectors}
 We identify four measurable dimensions that correspond to the theoretical vectors established in Section 4.
@@ -759,6 +885,9 @@ We identify four measurable dimensions that correspond to the theoretical vector
     \end{itemize}
 \end{itemize}
 
+This commitment to rigorous, behavioral, and context-aware measurement separates the Functional Agency Model from purely philosophical or self-help frameworks and positions it as a falsifiable scientific and engineering program. 
+
+\newpage
 \subsection{The Falsifiability Test: The Interventional Predictability Audit}
 A system's status as a \textbf{Sovereign Agent} can be falsified through the following protocol:
 \begin{enumerate}
@@ -766,7 +895,7 @@ A system's status as a \textbf{Sovereign Agent} can be falsified through the fol
     \item \textbf{Test:} An external model $M$ (with access to $A$'s observable history) attempts to predict $A$'s next action $a(t+1)$ under a series of controlled informational nudges.
     \item \textbf{Falsification Criteria:} If model $M$ can reliably predict and steer $A$'s output with $>95\%$ accuracy across $N$ trials without simulating $A$ in full, then $A$ lacks Process Sovereignty. In such a state, $A$ is \textbf{Computationally Reducible} and the claim of agency is falsified for that specific context.
 \end{enumerate}
-This protocol allows the \textbf{Meaningfulness Foundation} to audit socio-technical environments (like social media platforms) to determine if they are technically inducing \textbf{Ontological Harm} by reducing the population's measurable $D_A$.
+This protocol is designed to allow any \textbf{independent auditing body or non-profit initiative} (such as the planned \textbf{Meaningfulness Foundation}) to audit socio-technical environments (like social media platforms). Its purpose is to determine if these systems are technically inducing \textbf{Ontological Harm} by reducing the population's measurable $D_A$.
 
 
 \subsection{The Calibration Challenge: A Note on Proxy Selection}
@@ -776,37 +905,46 @@ While the proxies listed in D.1 provide a starting point for empirical assessmen
 \begin{itemize}
     \item \textbf{Context Dependency:} The "correct" weighting of vectors ($T_h, C_w, H_i, R_m$) is context-dependent. A fighter pilot requires a different calibration than a long-term strategic planner. The proxies must be normalized against a baseline established for the specific decision-making environment being audited.
     
-    \item \textbf{The Goodhart Problem:} Once a proxy becomes a target, it ceases to be a good measure. For example, if "counterfactual generation fluency" ($C_w$) is used as a key metric, agents (or AI systems) could be trained to generate many meaningless counterfactuals to "game the test." Audits must therefore rely on a \textit{battery} of diverse, non-obvious proxies rather than a single metric.
+    \item \textbf{The Goodhart Problem:} Once a proxy becomes a target, it ceases to be a good measure. For example, if "counterfactual width" ($C_w$) is used as a key metric, agents (or AI systems) could be trained to generate many meaningless counterfactuals to "game the test." Audits must therefore rely on a \textit{battery} of diverse, non-obvious proxies rather than a single metric.
     
     \item \textbf{Subjectivity vs. Behavior:} Self-report measures of agency are notoriously unreliable. The proxies proposed here are intentionally \textit{behavioral} and \textit{performance-based}. The goal is not to measure how "free" an agent feels, but to measure their functional capacity to act as an irreducible, causally effective system in the face of environmental entropy and adversarial steering.
 \end{itemize}
 
-This commitment to rigorous, behavioral, and context-aware measurement separates the Functional Agency Model from purely philosophical or self-help frameworks and positions it as a falsifiable scientific and engineering program.
+The risk of the Goodhart Problem—that a metric will be gamed once institutionalized—implies a primary ethical mandate for the \textbf{Meaningfulness Foundation}: to continuously update and audit the complexity of the proxy metrics to ensure they remain anchored to the true goal of Agency Preservation, rather than superficial compliance.
 
 
-
-% --- Appendix E ---
+% --- APPENDIX E: Functional Thinking Levels ---
 \newpage
+\section{Functional Definition of Thinking Levels}
+\label{app:thinking_levels}
 
-\section{The MMG Research Program: Forthcoming Reports}
-\label{app:research_program}
+The Functional Agency Model (FAM) utilizes a hierarchical map of cognitive complexity, or \textbf{Cognitive Verticality}, to define the resolution of an agent's internal simulator. This hierarchy is a synthesis of established developmental and computational taxonomies \citep{bach2015, kegan1982, loevinger1976}, structured by the scope of the agent's internal model. The full definition and computational framework of this hierarchy will be presented in a forthcoming paper \textit{MMG-TR-006 (Cognitive Verticality)}.
 
-This technical report is the second in a planned series of foundational papers designed to build a comprehensive, multi-disciplinary framework for Cognitive Sovereignty. The subsequent reports\textsc{*} will expand upon the concepts established herein.
+The core functional distinction relevant to the Active Inference model (Section 5) is made across seven operative levels of increasing recursive depth:
 
-\begin{description}
-    \item[MMG-TR-003: Cognitive Sovereignty in Algorithmic Societies] This report will analyze the systemic erosion of Agency Depth in modern socio-technical systems. It will present a formal threat model of the Attention Economy and propose a new class of human rights, including the "Right to remain Incomputable," outlining technical and ethical standards for platforms.
+\begin{description}[leftmargin=*, itemsep=0.5em]
+    \item[\textbf{Level 1-2 (Surface/Rule-Based):}] \textit{Reactive, low-complexity processing.} Characterized by focus on immediate sensory input, hard-wired reflexes, and learned procedural scripts. Functionally aligned with Maslow's physiological and safety needs (Pragmatic Value).
+    
+    \item[\textbf{Level 3-4 (Conceptual/Reflective):}] \textit{Analytical processing.} Characterized by the ability to handle abstractions, form principles, and engage in critical, evidence-based evaluation of external data.
+    
+    \item[\textbf{Level 5-7 (Integrative/Ontological):}] \textit{Meta-cognitive processing.} Characterized by the ability to connect disparate systems, question the foundations of knowledge (epistemology), and generate frameworks of meaning (ontology). Functionally aligned with Maslow's esteem and self-actualization needs (Epistemic Value).
 
-    \item[MMG-TR-004: The Socio-Technical Foundations of Agency] This report will connect the theoretical metric of Agency Depth to the lived reality of human inequality. It will argue that high $D_A$ is a resource-intensive state dependent on a foundation of socio-economic stability, education, and connection, providing the ethical and technical justification for the future establishment of the Meaningfulness Foundation, a non-profit initiative intended to apply the protocols developed by the Meaningfulness Media Group.
+    \item[\textbf{Action Modality (The Behavioral Output):}] Characterizes the agent's response patterns, which are determined by the underlying thinking level:
+    \begin{itemize}
+        \item \textbf{Reaction/Inaction:} Prevalent in L1-L3 (Pragmatic Value). Responses are high-speed, reflexive, or driven by immediate environmental stimuli. Inaction is often a failure to break an established script.
+        \item \textbf{Action/Proaction:} Prevalent in L4-L7 (Epistemic Value). Responses are governed by complex simulation, future projection, and deliberate, counterfactual policy selection. Proaction is an engineered outcome of a high-$D_A$ system.
+    \end{itemize}
 
-    \item[MMG-TR-005: The Spectrum of Ontological Crisis] This final report unifies the entire framework by defining the \textbf{Ontological Crisis} (the collapse of internal meaning) and \textbf{Epistemological Collapse} (the systemic failure of shared truth) as a single, continuous spectrum of threat to human agency. It integrates the findings of TR-001 through TR-004 to construct the \textbf{Full Spectrum Intervention Model}. This model establishes the theoretical justification for the \textbf{Meaningfulness Foundation's} dual mission: to advocate for systemic defenses that protect the agent's \textbf{Unpredictability Horizon} (fighting chronic harm) and to provide protocols (like the Gardener's Calculus) for the safe, compassionate integration of truth (mitigating acute harm). The ultimate goal is the restoration of Causal Sovereignty and the defense of human existence in the face of informational chaos.
 \end{description}
-\textit{*: Note that the titles of forthcoming technical reports are provisional and subject to revision upon final publication; the core topics and scope should remain broadly as described.}
 
 
-% --- APPENDIX F: PRIOR ART & DISTINCT CONTRIBUTION ---
+This functional distinction establishes the boundary between mere survival and the intentional pursuit of truth and complexity required to maintain high Effective Agency ($A_e$).
+
+
+% --- APPENDIX F: Prior Art ---
 \newpage
 
-\section{Appendix F: Prior Art Boundary and Distinct Contribution}
+\section{Prior Art Boundary and Distinct Contribution}
 
 To situate the Functional Agency Model (FAM) within the broader intellectual landscape, this appendix provides a targeted boundary definition. It is not a comprehensive literature review but a formal positioning statement, designed to clarify the specific, novel contributions of this report.
 
@@ -832,11 +970,12 @@ A growing body of literature in AI ethics and Human-Computer Interaction details
 
 \noindent \textbf{Distinct Contribution:} While this literature primarily establishes the normative harm, FAM provides the formal mechanism and state variables. The \textbf{Process Sovereignty Criterion} provides a technical definition for \textit{why} a nudge can constitute a sovereignty violation (it functions as a bypass/compression operation), and the \textbf{Agency Depth ($D_A$)} framework provides the structured variables required to model the resulting collapse.
 
-\subsection{The Novel Synthesis of MMG-TR-002}
-The novelty of this report is not the discovery of reflexivity, but the synthesis of these threads into a single, operational, and falsifiable framework for agency in algorithmic societies. The distinct contributions are:
+
+\subsection{The Novel Synthesis of this report}
+The novelty of this report (MMG-TR-002) is not the discovery of reflexivity, but the synthesis of these threads into a single, operational, and falsifiable framework for agency in algorithmic societies. The distinct contributions are:
 
 \begin{enumerate}
-    \item \textbf{The Target Property: Disclosure-Stable Prediction (DSP).} We define the sovereignty-relevant prediction target as one that remains stable under disclosure without violating deliberative integrity (here ``intervention-stable'' is meant in the disclosure-coupled sense defined in \S3, not distribution-shift invariance).
+    \item \textbf{The Target Property: Disclosure-Stable Prediction (DSP).} We define the sovereignty-relevant prediction target as one that remains stable under disclosure without violating deliberative integrity (here ``intervention-stable'' is meant in the disclosure-coupled sense defined in Section 3, not distribution-shift invariance).
     
     \item \textbf{The Sovereignty Criterion: Process Sovereignty.} We introduce an explicit efficiency and integrity bound. Our criterion disqualifies ``prediction by simplification''---any method that achieves accuracy by reducing the agent's decision-relevant degrees of freedom. This makes sovereignty an auditable engineering property, not only a moral claim.
     
@@ -846,6 +985,28 @@ The novelty of this report is not the discovery of reflexivity, but the synthesi
 \subsection{Falsification Boundary}
 The framework is falsifiable at the boundary it specifies. Any demonstrated method that achieves prediction that remains stable under disclosure while verifiably \textbf{preserving} the agent’s decision-relevant degrees of freedom (i.e., without paying equivalent simulation cost and without engaging in control operations) would refute the sovereignty criterion as defined in this report. This forces critique into the realm of empirical demonstration, not merely theoretical objection.
 
+
+% --- APPENDIX G: Research Program ---
+\newpage
+
+\section{The MMG Research Program: Forthcoming Reports}
+\label{app:research_program}
+
+This technical report is the second in a planned series of foundational papers designed to build a comprehensive, multi-disciplinary framework for Cognitive Sovereignty. The subsequent reports\textsc{*} will expand upon the concepts established herein.
+
+\begin{description}
+    \item[MMG-TR-003: Cognitive Sovereignty in Algorithmic Societies] This report will analyze the systemic erosion of Agency Depth in modern socio-technical systems. It presents a formal threat model of the Attention Economy and proposes a new class of human rights, including the "Right to remain Incomputable."
+
+    \item[MMG-TR-004: The Socio-Technical Foundations of Agency] This report connects $D_A$ to the lived reality of human inequality, arguing that high $D_A$ is a resource-intensive state dependent on socio-economic stability, education, and connection, justifying the Foundation's role.
+
+    \item[MMG-TR-005: The Spectrum of Ontological Crisis] This capstone report unifies the entire framework, defining the \textbf{Ontological Crisis} (internal meaning collapse) and \textbf{Epistemological Collapse} (failure of shared truth) as a single spectrum of threat. This model establishes the theoretical justification for any \textbf{intervening organization's} dual mission: to advocate for systemic defenses that protect the agent's \textbf{Unpredictability Horizon} (fighting chronic harm) and to provide protocols (like the Gardener's Calculus) for the safe, compassionate integration of truth (mitigating acute harm).
+    
+    \item[MMG-TR-006: Cognitive Verticality: The Architecture of Thinking Depth] This report formalizes the \textbf{7-Level Hierarchy of Thinking Depth}, utilizing the computational rigor of the Loevinger/Kegan models. It maps the agent's recursive resolution, demonstrating why higher verticality is a necessary precondition for maintaining high \textbf{Effective Agency ($A_e$)} and resisting algorithmic pattern recognition.
+
+    \item[MMG-TR-007: The Meaningfulness Protocol] This applied report synthesizes the entire sequence (TR-001 through TR-006) into a concise, actionable methodology. It defines \textbf{Meaningfulness} as the objective system output of a high-complexity agent and provides structured protocols to foster resilient connections and combat the nihilism arising from cognitive verticality dissonance.
+\end{description}
+
+\textit{*: Note that the titles of forthcoming technical reports are provisional and subject to revision upon final publication; the core topics and scope should remain broadly as described.}
 
 
 \end{document}

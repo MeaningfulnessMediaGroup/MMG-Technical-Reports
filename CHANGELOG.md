@@ -7,7 +7,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 
 
-## [v1.0.1] - 2026-02-06
+## [TR-002 - v1.0.0] - 2026-02-09
+
+### Added
+
+*   **MMG-TR-002: Functional Agency in Physical Systems** - The foundational computational model for human agency. This report formally replaces the metaphysical term "Free Will" with the technical, measurable concept of Functional Agency.
+
+
+## [TR-001 - v1.0.1] - 2026-02-06
 
 ### Added
 
@@ -15,7 +22,6 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Changed
 
-*  
 *   Changed the appearance of the GitHub repo link on the front page to look cleaner and more professional.
 
 ### Fixed
@@ -23,7 +29,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 *   Licensed under CC BY 4.0 sentence reduced to CC BY 4.0 only on all pages footer.
 
 
-## [v1.0.0] - 2026-02-02
+## [TR-001 - v1.0.0] - 2026-02-02
 
 ### Added
 

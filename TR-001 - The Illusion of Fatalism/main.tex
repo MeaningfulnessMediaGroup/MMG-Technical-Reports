@@ -10,7 +10,7 @@
 \usepackage{geometry}
 \usepackage{authblk}
 \usepackage{abstract}
-\usepackage{times}
+\usepackage{newtxtext,newtxmath}
 \usepackage{natbib}
 \usepackage{setspace}
 \usepackage{fancyhdr}
@@ -20,8 +20,8 @@
 \usepackage{caption}
 \usepackage{float}
 \usepackage{microtype} 
+\usepackage{etoolbox}           
 
-\usepackage{etoolbox}            % Allows us to "patch" the abstract
 \usepackage[hang]{footmisc}      % Standardizes footnote alignment
 \setlength{\footnotemargin}{1em} % Adjusts the gap between '*' and the text
 \usepackage[most]{tcolorbox}     % For the professional boxed look
@@ -57,7 +57,7 @@
 \setlength{\parskip}{0.2em} 
 \preauthor{\begin{center}\large}
 \postauthor{\par\end{center}}
-\setlength{\affilsep}{-0.3em} 
+\setlength{\affilsep}{0em} 
 
 
 % --- COMPACT TITLE SETUP ---
@@ -65,7 +65,7 @@
 \title{\textbf{The Illusion of Fatalism}\\
     \large Distinguishing Causal Determinism from Pre-Destination in Complex Systems\\
     \vspace{1.5em}
-    \small MMG Technical Report No. 1: \texttt{MMG-TR-001} \\
+    \small MMG Technical Report No. 1: MMG-TR-001 \\
     \small \textbf{Status:} \textit{Foundational White Paper / Philosophical Framework}}
 
 
@@ -120,8 +120,10 @@ We conclude that because the future is computationally irreducible for any compl
 \thispagestyle{fancy}
 
 \fancyhf{}
-\fancyhead[L]{\footnotesize \texttt{MMG-TR-001}} 
-\fancyhead[R]{\footnotesize Section \thesection}    
+\renewcommand{\sectionmark}[1]{\markboth{#1}{}}
+\renewcommand{\subsectionmark}[1]{}
+\fancyhead[L]{\footnotesize MMG-TR-001}
+\fancyhead[R]{\footnotesize \nouppercase{\leftmark}}
 \cfoot{
     \footnotesize Copyright \copyright\ 2026 Meaningfulness Media Group. \href{https://creativecommons.org/licenses/by/4.0/}{CC BY 4.0} \\
     Page \thepage\ of \pageref{LastPage}
@@ -130,7 +132,7 @@ We conclude that because the future is computationally irreducible for any compl
 
 
 % --- SECTION 1 ---
-\section{Introduction: The Inference Error}
+\section[Introduction]{Introduction: The Inference Error}
 The early 21st century has been defined by a convergence of two powerful epistemological trends: the unprecedented predictive fidelity of artificial intelligence and the mapping of neural correlates by neuroscience. Taken together, these advances have caused a resurgence of \textbf{Hard Determinism}—the philosophical position that human behavior is entirely explained by antecedent physical causes, making "choice" a retrospective illusion \citep{sapolsky2023}.
 
 This revival has triggered a profound "Ontological Shock" across the cultural landscape. If the brain is a machine governed by physical laws, and if machines are predictable, the popular inference is that the future is a static "Block Universe" in which human consciousness is merely a passenger. This inference has fueled the rise of \textbf{Causal Nihilism}—a debilitating form of existential apathy characterized by the belief that striving, deliberation, and moral effort are scientifically obsolete concepts.
@@ -145,7 +147,7 @@ For a detailed defense of these boundary conditions and a refutation of metaphys
 
 % --- SECTION 2 ---
 \newpage
-\section{Methodological Foundations: The Axioms of the System}
+\section[Methodological Foundations]{Methodological Foundations: The Axioms of the System}
 To dismantle the fallacy of fatalism, we must first establish a rigorous set of axioms that accept the scientific reality of the physical world while rejecting the logical leaps of the fatalist.
 
 \begin{tcolorbox}[colback=gray!10, colframe=black, title=\textbf{Glossary of Agency}]
@@ -353,7 +355,7 @@ This shift from "passive conduit for physical laws" to "salient author" provides
 
 % --- SECTION 5 ---
 \newpage
-\section{Discussion: The Diachronic Agent and the Refutation of Nihilism}
+\section[Discussion]{Discussion: The Diachronic Agent and the Refutation of Nihilism}
 The transition from a "Block Universe" model to a "Process Sovereignty" model has profound implications for how we interpret neuroscientific data and how we construct ethical responsibility.
 
 \subsection{Addressing the "Libet Objection"}
@@ -388,7 +390,7 @@ The Unpredictability Horizon ($H_u$) exists not because the agent is "random", b
 
 % --- SECTION 6 (Conclusion) ---
 \newpage
-\section{Conclusion: The Dignity of the Process}
+\section[Conclusion]{Conclusion: The Dignity of the Process}
 The existence of a lawful, physically determined universe does not necessitate a world where choice is rendered meaningless by a pre-ordained fate. On the contrary, it reveals a cosmos of intricate causality—a universe whose future is infeasible to compute for any embedded predictor, generated moment by moment through the lawful unfolding of the present.
 
 This paper has argued that the "Great Misinterpretation" of the 21st century—the conflation of Causal Determinism with Fatalism—is a category error derived from applying linear intuition to non-linear systems. We have demonstrated three core constraints:
@@ -411,7 +413,7 @@ By rejecting Causal Nihilism, we re-establish the agent's role as a salient caus
 % --- BIBLIOGRAPHY ---
 \newpage
 \fancyhf{}
-\fancyhead[L]{\footnotesize \texttt{MMG-TR-001}} 
+\fancyhead[L]{\footnotesize MMG-TR-001} 
 \fancyhead[R]{\footnotesize References}     
 \cfoot{
     \footnotesize Copyright \copyright\ 2026 Meaningfulness Media Group. \href{https://creativecommons.org/licenses/by/4.0/}{CC BY 4.0} \\
@@ -481,7 +483,7 @@ Wolfram, S. (2002). \textit{A New Kind of Science}. Wolfram Media.
 \appendix
 
 \fancyhf{}
-\fancyhead[L]{\footnotesize \texttt{MMG-TR-001}} 
+\fancyhead[L]{\footnotesize MMG-TR-001} 
 \fancyhead[R]{\footnotesize Appendix \thesection} 
 \cfoot{
     \footnotesize Copyright \copyright\ 2026 Meaningfulness Media Group. \href{https://creativecommons.org/licenses/by/4.0/}{CC BY 4.0} \\
