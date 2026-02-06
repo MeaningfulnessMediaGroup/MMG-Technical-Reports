@@ -1,4 +1,4 @@
-# The Illusion of Fatalism: Distinguishing Causal Determinism from Pre-Destination in Complex Systems (MMG-TR-001)
+# The Meaningfulness Media Group Technical Reports 
 
 [![License: CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-blue.svg)](https://creativecommons.org/licenses/by/4.0/)
 
@@ -83,6 +83,7 @@ We encourage contributions to the ongoing development of the framework, particul
 *   `/TR-002 - Functional Agency in Physical Systems/`: Source files (`.tex`, `.pdf`).
 *   `/TR-003_draft/`: Initial conceptual models regarding the systemic erosion of agency.
 *   `/Citations/`: BibTeX file for all referenced material.
+
 
 
 
