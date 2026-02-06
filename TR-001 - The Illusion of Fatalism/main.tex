@@ -14,23 +14,22 @@
 \usepackage{natbib}
 \usepackage{setspace}
 \usepackage{fancyhdr}
-\usepackage{titling} 
+\usepackage{titling}
 \usepackage{enumitem}
 \usepackage{lastpage}
 \usepackage{caption}
 \usepackage{float}
 \usepackage{microtype} 
-\usepackage{etoolbox} 			
 
-\usepackage[hang]{footmisc} 		% Standardizes footnote alignment
-\setlength{\footnotemargin}{1em} 	% Adjusts the gap between '*' and the text
-\usepackage[most]{tcolorbox} 		% For the professional boxed look
+\usepackage{etoolbox}            % Allows us to "patch" the abstract
+\usepackage[hang]{footmisc}      % Standardizes footnote alignment
+\setlength{\footnotemargin}{1em} % Adjusts the gap between '*' and the text
+\usepackage[most]{tcolorbox}     % For the professional boxed look
 
 \usepackage[dvipsnames,table,xcdraw]{xcolor} 
 \usepackage{listings}
 \usepackage[colorlinks=true, linkcolor=NavyBlue, citecolor=NavyBlue, urlcolor=NavyBlue]{hyperref}
 
-% Custom colors 
 \definecolor{jsonpurple}{rgb}{0.5,0,0.5}
 \definecolor{jsonorange}{rgb}{1,0.5,0}
 
@@ -41,7 +40,7 @@
     keywordstyle=\color{blue},
     commentstyle=\color{gray},
     frame=single,
-    rulecolor=\color{lightgray}, %
+    rulecolor=\color{lightgray}, 
     showstringspaces=false
 }
 
@@ -58,21 +57,22 @@
 \setlength{\parskip}{0.2em} 
 \preauthor{\begin{center}\large}
 \postauthor{\par\end{center}}
-\setlength{\affilsep}{-0.3em}
+\setlength{\affilsep}{-0.3em} 
 
 
 % --- COMPACT TITLE SETUP ---
-\setlength{\droptitle}{-4em} 
+\setlength{\droptitle}{-4em}
 \title{\textbf{The Illusion of Fatalism}\\
     \large Distinguishing Causal Determinism from Pre-Destination in Complex Systems\\
     \vspace{1.5em}
     \small MMG Technical Report No. 1: \texttt{MMG-TR-001} \\
     \small \textbf{Status:} \textit{Foundational White Paper / Philosophical Framework}}
 
-% IMPORTANT: No \vspace inside these brackets
-\author{Djeff Bee\thanks{Correspondence: \href{mailto:info@meaningfulness.com.au}{info@meaningfulness.com.au}
-GitHub: \href{https://github.com/MeaningfulnessMediaGroup/MMG-Technical-Reports}{GitHub Repo}}}
+
+\author{Djeff Bee\thanks{Correspondence: \href{mailto:info@meaningfulness.com.au}{info@meaningfulness.com.au} \ | \ \href{https://github.com/MeaningfulnessMediaGroup/MMG-Technical-Reports}{github.com/MeaningfulnessMediaGroup}}}
+
 \affil{\textit{Principal Architect, Meaningfulness Media Group}}
+%\date{\today}
 \date{February 2, 2026}
 
 
@@ -88,7 +88,7 @@ GitHub: \href{https://github.com/MeaningfulnessMediaGroup/MMG-Technical-Reports}
 \fancyhf{}
 \renewcommand{\headrulewidth}{0pt}
 \cfoot{
-    \footnotesize Copyright \copyright\ 2026 Meaningfulness Media Group. \href{https://creativecommons.org/licenses/by/4.0/}{Licensed under CC BY 4.0} \\
+    \footnotesize Copyright \copyright\ 2026 Meaningfulness Media Group. \href{https://creativecommons.org/licenses/by/4.0/}{CC BY 4.0} \\
     Page \thepage\ of \pageref{LastPage}
 }
 
@@ -109,8 +109,10 @@ We conclude that because the future is computationally irreducible for any compl
 
 
 \vspace{1em}
+{
+\small
 \noindent \textbf{Keywords:} Causal Nihilism, Chaos Theory, Hard Determinism, Compatibilism, Agency Depth, Unpredictability Horizon, Computational Irreducibility, Information Theory, Free Will.
-
+}
 
 % --- FOOTER AND HEADER SETTINGS ---
 \newpage
@@ -121,11 +123,10 @@ We conclude that because the future is computationally irreducible for any compl
 \fancyhead[L]{\footnotesize \texttt{MMG-TR-001}} 
 \fancyhead[R]{\footnotesize Section \thesection}    
 \cfoot{
-    \footnotesize Copyright \copyright\ 2026 Meaningfulness Media Group. \href{https://creativecommons.org/licenses/by/4.0/}{Licensed under CC BY 4.0} \\
+    \footnotesize Copyright \copyright\ 2026 Meaningfulness Media Group. \href{https://creativecommons.org/licenses/by/4.0/}{CC BY 4.0} \\
     Page \thepage\ of \pageref{LastPage}
 }
-\renewcommand{\headrulewidth}{0.4pt} 
-
+\renewcommand{\headrulewidth}{0.4pt}
 
 
 % --- SECTION 1 ---
@@ -140,7 +141,6 @@ This paper posits that \textbf{Causal Nihilism} rests on a fundamental \textbf{c
 Methodologically, we are not trying to refute physical determinism or rely on metaphysical "leaps" outside the causal chain. Instead, we isolate a narrower, technical claim: deterministic causality does not imply the predictive accessibility of the deep future for physically embedded agents. Our framework represents a \textbf{High-Resolution Compatibilism} that aligns with the naturalistic tradition of \citet{dennett2003}, yet adds a necessary computational layer. While we agree that the varieties of free will "worth wanting" are compatible with determinism, we emphasize that this state is \textbf{computationally irreducible}. The resulting unpredictability is not a symptom of human ignorance, but a fundamental constraint of the universal manifold. 
 
 For a detailed defense of these boundary conditions and a refutation of metaphysical objections, \hyperref[app:steelmanning]{Appendix B}.
-
 
 
 % --- SECTION 2 ---
@@ -224,8 +224,6 @@ that agency is not merely a philosophical fact to be debated, but a \textbf{capa
 \subsection{Methodological Commitment to High-Resolution Ethics}
 Finally, we commit to a "High-Resolution" ethical framework. We recognize that if agency is a spectrum, then \textbf{Responsibility} must be proportional to Agency Depth. A system that intentionally reduces the $D_A$ of its users (via addictive algorithmic loops or social isolation) is not merely providing "entertainment"; it is technically committing an \textbf{Ontological Harm} by stripping the agent of their causal sovereignty. By establishing these axioms, we move the conversation from abstract morality to the quantifiable preservation of the human process. This ensures that the defense of meaning is grounded in the same rigorous systems theory used to build the technologies that currently threaten it.
 
-
-
 % --- SECTION 3 ---
 \newpage
 \section{The Failure of Linear Extrapolation in Cognitive Systems}
@@ -278,7 +276,6 @@ where $T$ is a decision-discrimination threshold. In a system governed by a maxi
 Beyond $H_u$, the future state of the agent is \textbf{operationally undetermined for any external predictor}. This horizon represents the "Point of Information Exhaustion": the past no longer contains sufficient data to specify the future. Consequently, the agent is not "acting as if they are free" due to ignorance; they are performing the \textbf{necessary computation} required to resolve a \textbf{computationally uncomputed} probability space into a defined reality.
 
 
-
 % --- SECTION 4 ---
 \newpage
 
@@ -303,7 +300,7 @@ The depth of an agent’s agency is determined by three primary vectors:
 \subsubsection{The Relationship Between Depth and Reducibility}
 There exists an inverse relationship between Agency Depth and \textbf{Computational Reducibility}. As $D_A$ increases, the "Firewall" of the agent hardens; it becomes mathematically more difficult for any external observer to "shortcut" the agent's behavior. 
 
-\itemsep1em 
+\itemsep1em % Optional: Adds a bit of space between this paragraph and the next for clarity.
 Conversely, we identify a state of \textbf{Agency Collapse}, where external stressors, lack of connection, or algorithmic manipulation "shrink" the agent's \(D_A\). In this state, the agent reverts to a linear, reactive mode, rendering them functionally reducible and susceptible to systemic control. This transition from "Deep Agency" to "Shallow Reactivity" is the primary mechanism of Causal Nihilism in the modern era.
 
 \subsubsection{Agency as a Formalizable Research Objective}
@@ -389,7 +386,7 @@ The Unpredictability Horizon ($H_u$) exists not because the agent is "random", b
 
 
 
-% --- SECTION 6 ---
+% --- SECTION 6 (Conclusion) ---
 \newpage
 \section{Conclusion: The Dignity of the Process}
 The existence of a lawful, physically determined universe does not necessitate a world where choice is rendered meaningless by a pre-ordained fate. On the contrary, it reveals a cosmos of intricate causality—a universe whose future is infeasible to compute for any embedded predictor, generated moment by moment through the lawful unfolding of the present.
@@ -417,10 +414,11 @@ By rejecting Causal Nihilism, we re-establish the agent's role as a salient caus
 \fancyhead[L]{\footnotesize \texttt{MMG-TR-001}} 
 \fancyhead[R]{\footnotesize References}     
 \cfoot{
-    \footnotesize Copyright \copyright\ 2026 Meaningfulness Media Group. \href{https://creativecommons.org/licenses/by/4.0/}{Licensed under CC BY 4.0} \\
+    \footnotesize Copyright \copyright\ 2026 Meaningfulness Media Group. \href{https://creativecommons.org/licenses/by/4.0/}{CC BY 4.0} \\
     Page \thepage\ of \pageref{LastPage}
 }
 \renewcommand{\headrulewidth}{0.4pt} 
+
 
 \bibliographystyle{plainnat}
 \begin{thebibliography}{99}
@@ -433,6 +431,9 @@ Cover, T. M., \& Thomas, J. A. (2006). \textit{Elements of Information Theory} (
 
 \bibitem[Dennett(2003)]{dennett2003}
 Dennett, D. C. (2003). \textit{Freedom Evolves}. Viking.
+
+\bibitem[Gisin(2020)]{gisin2020}
+Gisin, N. (2020). Mathematical languages shape our understanding of time in physics. \textit{Nature Physics}, 16(2), 114--116.
 
 \bibitem[Hoel et al.(2013)]{hoel2013}
 Hoel, E. P., Albantakis, L., \& Tononi, G. (2013). Quantifying causal emergence shows that macro can beat micro. \textit{Proceedings of the National Academy of Sciences}, 110(49), 19790--19795.
@@ -451,6 +452,9 @@ Lorenz, E. N. (1963). Deterministic Nonperiodic Flow. \textit{Journal of the Atm
 
 \bibitem[Prigogine(1997)]{prigogine1997}
 Prigogine, I. (1997). \textit{The End of Certainty: Time, Chaos, and the New Laws of Nature}. The Free Press.
+
+\bibitem[Rovelli(2018)]{rovelli2018}
+Rovelli, C. (2018). \textit{The Order of Time}. Riverhead Books.
 
 \bibitem[Sapolsky(2023)]{sapolsky2023}
 Sapolsky, R. M. (2023). \textit{Determined: A Science of Life without Free Will}. Penguin Press.
@@ -472,7 +476,7 @@ Wolfram, S. (2002). \textit{A New Kind of Science}. Wolfram Media.
 
 
 
-% APPENDICES
+% --- APPENDICES ---
 \newpage
 \appendix
 
@@ -480,13 +484,12 @@ Wolfram, S. (2002). \textit{A New Kind of Science}. Wolfram Media.
 \fancyhead[L]{\footnotesize \texttt{MMG-TR-001}} 
 \fancyhead[R]{\footnotesize Appendix \thesection} 
 \cfoot{
-    \footnotesize Copyright \copyright\ 2026 Meaningfulness Media Group. All Rights Reserved. \\
+    \footnotesize Copyright \copyright\ 2026 Meaningfulness Media Group. \href{https://creativecommons.org/licenses/by/4.0/}{CC BY 4.0} \\
     Page \thepage\ of \pageref{LastPage}
 }
-\renewcommand{\headrulewidth}{0.4pt} 
+\renewcommand{\headrulewidth}{0.4pt}
 
-
-
+% --- APPENDIX A ---
 \section{Technical Glossary of Agency}
 \label{app:glossary}
 
@@ -506,7 +509,7 @@ To ensure clarity and prevent confusion of terms, this appendix lays out how we 
     \item[Unpredictability Horizon (\(H_u\))] A relational, context-dependent temporal boundary beyond which the future state of a complex agent becomes informationally inaccessible and computationally intractable for a physically embedded observer. It is determined by the interplay of chaotic divergence (Lyapunov time), thermodynamic costs (Landauer's Principle), and quantum measurement limits (Heisenberg Uncertainty).
 \end{description}
 
-
+% --- APPENDIX B ---
 \newpage
 \section{Limitations and Anticipated Objections (Steel-Manning)}
 \label{app:steelmanning}
@@ -544,7 +547,7 @@ Where the mapping to cognitive agency is indirect, we treat these as resource co
 These terms are introduced to facilitate specific system modeling (in MMG-TR-002 and TR-003), not to confuse you.
 
 
-
+% --- APPENDIX C ---
 \newpage
 \section{The MMG Research Program: Forthcoming Reports}
 
@@ -562,5 +565,28 @@ This technical report is the first in a planned series of five core papers desig
 \end{description}
 
 \textit{*: Note that the titles of forthcoming technical reports are provisional and subject to revision upon final publication; the core topics and scope should remain broadly as described.}
+
+
+% --- APPENDIX D ---
+\newpage
+\section{The Functional Irrelevance of Ontic Determinism}
+
+\vspace{-0.4em}
+\subsection{The Limit of Embedded Observation (The Incompleteness Argument)}
+A rigorous metaphysical objection to this framework posits that establishing \textbf{Informational Inaccessibility} (an epistemic limit) does not logically prove \textbf{Ontological Non-Existence} (an ontic reality). The critic may ask: \textit{"Just because the agent cannot compute the future, does that prove the future is not already fixed?"}
+
+We explicitly acknowledge the limits of formal proof here. As established by Gödel’s Incompleteness Theorems and the general principles of internal observation, an agent embedded within a system cannot step "outside" that system to verify its total temporal structure. Any proof that the future is "unwritten" would itself be a physical process occurring within the manifold, creating a performative contradiction. Therefore, we do not claim to disprove the existence of a Block Universe from an Archimedean "View from Nowhere."
+
+\vspace{-0.4em}
+\subsection{The Indistinguishability Thesis}
+However, we posit that for any physically embedded agent, this distinction is \textbf{functionally null}. If the future is perfectly encrypted by the constraints of Chaos and Computational Irreducibility, then an \textit{operationally unresolved} future is indistinguishable from an \textit{ontically unresolved} one. This alignment is reinforced by modern intuitionistic physics, which suggests that because the universe lacks infinite informational precision, the future is literally non-existent until the specific information required to define it is generated by the evolution of the system \citep{gisin2020}.
+
+The cognitive architecture of the agent must perform the state-transition calculation to bridge $t$ to $t+1$. Whether that calculation is "creating" a new future (Open Universe) or "deciphering" a pre-written one (Block Universe) makes no difference to the thermodynamic work required by the agent \citep{rovelli2018}. The "Block Universe" hypothesis, while metaphysically valid, is \textbf{informationally null}; it contains no accessible data that can be used to bypass the labor of choice.
+
+\vspace{-0.4em}
+\subsection{Refuting the Fatalist Excuse}
+Consequently, this framework renders Causal Nihilism obsolete not by solving the metaphysics of time, but by proving its irrelevance to agency. The Nihilist claim—\textit{"It is written, therefore I do not need to act"}—is a category error.
+
+Even if the script \textbf{were} written, the text \textbf{would remain} unreadable without the agent's active participation. The agent is the necessary reading mechanism. To cease acting is not to "accept fate"; it is to crash the reader. Thus, we settle the Free Will debate by demonstrating that \textbf{Functional Agency is a hard physical requirement} of a complex system, regardless of the ultimate nature of the substrate.
 
 \end{document}
