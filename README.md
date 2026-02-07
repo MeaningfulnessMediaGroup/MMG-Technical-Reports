@@ -47,7 +47,12 @@ Our research program is expanding to cover the full stack of human meaning:
 *   **MMG-TR-005:** The Spectrum of Ontological Crisis (Diagnosis and Intervention).
 *   **MMG-TR-006:** Cognitive Verticality (The 7 Levels of Thinking Depth).
 *   **MMG-TR-007:** The Meaningfulness Protocol (Applied Ethics for Connection).
-
+*   **MMG-TR-008:** The Epistemic Nutritional Label (Regulatory Standards for Cognitive Interventions).
+*   **MMG-TR-009:** The Taxonomy of Cognitive Consumption (Quantifying Entertainment vs. Meaning).
+*   **MMG-TR-010:** Cognitive Dietetics (Operational Taxonomy for Informational Intake).
+*   **MMG-TR-011:** The Ecology of Resonance (Formalizing Collective Agency Depth).
+*   **MMG-TR-012:** The Architecture of Significance (Constructive Secularism for Social Cohesion).
+  
 For more about the broader mission of the **Meaningfulness Media Group** and the forthcoming **Meaningfulness Foundation**, visit [Meaningfulness.com.au](https://Meaningfulness.com.au/about).
 
 ---
@@ -83,6 +88,7 @@ We encourage contributions to the ongoing development of the framework, particul
 *   `/TR-002 - Functional Agency in Physical Systems/`: Source files (`.tex`, `.pdf`).
 *   `/TR-003_draft/`: Initial conceptual models regarding the systemic erosion of agency.
 *   `/Citations/`: BibTeX file for all referenced material.
+
 
 
 
