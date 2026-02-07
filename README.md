@@ -18,7 +18,7 @@ Establishes the physical argument against Causal Nihilism. It demonstrates that 
 *   **Key Concepts:** Unpredictability Horizon ($H_u$), Salient Causality, Landauer’s Principle.
 *   **Takeaway:** The future is "uncomputed"; the agent’s internal processing is the necessary physical work required for the timeline to unfold.
 
---
+---
 
 ### [MMG-TR-002] Functional Agency in Physical Systems
 **Focus:** The Logic Layer (Computer Science & Self-Reference)  
@@ -88,6 +88,7 @@ We encourage contributions to the ongoing development of the framework, particul
 *   `/TR-002 - Functional Agency in Physical Systems/`: Source files (`.tex`, `.pdf`).
 *   `/TR-003_draft/`: Initial conceptual models regarding the systemic erosion of agency.
 *   `/Citations/`: BibTeX file for all referenced material.
+
 
 
 
