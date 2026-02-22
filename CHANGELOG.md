@@ -6,6 +6,12 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 
+## [TR-003 - v1.0.0] - 2026-02-22
+
+### Added
+
+*   **MMG-TR-003: Cognitive Sovereignty in Algorithmic Societies** - The Application Layer (Sociology & Policy) of the MMG Technical Suite. This report models the modern "Attention Economy" as an Adversarial Optimization System, introducing the concept of "Cognitive Fracking." It formally defines Ontological Harm and proposes the "Right to Remain Incomputable" alongside the Interventional Predictability Audit (IPA) to establish architectural standards for human agency.
+
 
 ## [TR-002 - v1.0.0] - 2026-02-09
 

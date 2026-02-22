@@ -30,30 +30,56 @@ Provides a formal computational proof for internal agency. Utilizing the **Halti
 
 ---
 
-### [MMG-TR-003] Cognitive Sovereignty in Algorithmic Societies [Forthcoming]
+### [MMG-TR-003] Cognitive Sovereignty in Algorithmic Societies
 **Focus:** The Application Layer (Sociology & Policy)  
-**Status:** Active Draft / RFC (Request for Comments)
+**Status:** Published | [DOI: 10.5281/zenodo.18728472](https://doi.org/10.5281/zenodo.18728472)
 
-Models the modern "Attention Economy" as an **Adversarial Optimization System**. It analyzes how predictive algorithms bypass System 2 deliberation to render human agents computationally reducible.
-*   **Key Concepts:** Ontological Harm, Predictive Resonance ($\rho_p$), The Right to Remain Incomputable, Cognitive Sanctuaries.
-*   **Takeaway:** Systematic reduction of human predictability is a structural injury to agency; we must codify "Incomputability" as a foundational digital human right.
+Models the modern "Attention Economy" as an **Adversarial Optimization System**. It analyzes how digital platforms engage in "Cognitive Fracking," bypassing System 2 deliberation to intentionally collapse a user's Unpredictability Horizon and render human agents computationally reducible.
+*   **Key Concepts:** Ontological Harm, Cognitive Fracking, The Right to Remain Incomputable, Cognitive Sanctuaries, Interventional Predictability Audit (IPA).
+*   **Takeaway:** The systematic reduction of an agent's deliberative capacity is a structural injury to human dignity; we must codify "Incomputability" as a foundational digital human right and enforce it through objective architectural standards.
 
 ---
-
-## 🚀 Research Roadmap
-
-Our research program is expanding to cover the full stack of human meaning:
-*   **MMG-TR-004:** The Socio-Technical Foundations of Agency (Thermodynamic Scaffolding).
-*   **MMG-TR-005:** The Spectrum of Ontological Crisis (Diagnosis and Intervention).
-*   **MMG-TR-006:** Cognitive Verticality (The 7 Levels of Thinking Depth).
-*   **MMG-TR-007:** The Meaningfulness Protocol (Applied Ethics for Connection).
-*   **MMG-TR-008:** The Epistemic Nutritional Label (Regulatory Standards for Cognitive Interventions).
-*   **MMG-TR-009:** The Taxonomy of Cognitive Consumption (Quantifying Entertainment vs. Meaning).
-*   **MMG-TR-010:** Cognitive Dietetics (Operational Taxonomy for Informational Intake).
-*   **MMG-TR-011:** The Ecology of Resonance (Formalizing Collective Agency Depth).
-*   **MMG-TR-012:** The Architecture of Significance (Constructive Secularism for Social Cohesion).
   
-For more about the broader mission of the **Meaningfulness Media Group** and the forthcoming **Meaningfulness Foundation**, visit [Meaningfulness.com.au](https://Meaningfulness.com.au/about).
+## 🚀 Research Roadmap: The Meaningfulness Technical Suite
+
+Our research program is expanding to cover the "Full Stack" of human meaning—from the physics of the causal manifold to the structure of digital civilization. The 14-part **MMG-TR Series** is architected across seven developmental phases:
+
+### Phase I: The Foundations (The Code)
+*Defining the physical and logical reality of human agency.*
+* [x] **MMG-TR-001:** The Illusion of Fatalism (Distinguishing Causal Determinism from Pre-Destination).
+* [x] **MMG-TR-002:** Functional Agency in Physical Systems (Defining Free Will via Computational Irreducibility).
+
+### Phase II: The Systemic Context (The Threat)
+*Diagnosing the external forces attempting to collapse human agency.*
+* [x] **MMG-TR-003:** Cognitive Sovereignty in Algorithmic Societies (A Methodological Framework for Reclaiming Human Agency).
+* [ ] **MMG-TR-004:** The Socio-Technical Foundations of Agency (Thermodynamic Scaffolding).
+
+### Phase III: The Internal Architecture (The Map)
+*Mapping the internal structure of the human mind and its breaking points.*
+* [ ] **MMG-TR-005:** The Spectrum of Ontological Crisis (Diagnosis and Intervention).
+* [ ] **MMG-TR-006:** Cognitive Verticality (The 7 Levels of Thinking Depth).
+
+### Phase IV: The Solutions (The Protocols)
+*Actionable methodologies for individuals and institutions.*
+* [ ] **MMG-TR-007:** The Meaningfulness Protocol (Applied Ethics for Connection).
+* [ ] **MMG-TR-008:** The Epistemic Nutritional Label (Regulatory Standards for Cognitive Interventions).
+
+### Phase V: The Dietetics (The Inputs)
+*Managing the supply chain of ideas.*
+* [ ] **MMG-TR-009:** The Taxonomy of Cognitive Consumption (Quantifying Entertainment vs. Meaning).
+* [ ] **MMG-TR-010:** Cognitive Dietetics (Operational Taxonomy for Informational Intake).
+
+### Phase VI: The Civilization (The Culture)
+*Scaling agency from the individual to the collective.*
+* [ ] **MMG-TR-011:** The Ecology of Resonance (Formalizing Collective Agency Depth).
+* [ ] **MMG-TR-012:** The Architecture of Significance (Constructive Secularism for Social Cohesion).
+
+### Phase VII: The Horizon (The Future)
+*Mapping the macro-historical and cosmological stakes of the cognitive transition.*
+- [ ] **MMG-TR-013:** The Cognitive Transition (From Information Age to Cognitive Age).
+- [ ] **MMG-TR-014:** The Cosmological Imperative (Agency Collapse as the Great Filter).
+  
+For more about the broader mission of the **Meaningfulness Media Group**, visit [Meaningfulness.com.au](https://Meaningfulness.com.au/about).
 
 ---
 
@@ -86,7 +112,7 @@ We encourage contributions to the ongoing development of the framework, particul
 
 *   `/TR-001 - The Illusion of Fatalism/`: Source files (`.tex`, `.pdf`) for the foundational paper.
 *   `/TR-002 - Functional Agency in Physical Systems/`: Source files (`.tex`, `.pdf`).
-*   `/TR-003_draft/`: Initial conceptual models regarding the systemic erosion of agency.
+*   `/TR-00X_draft/`: Initial conceptual models regarding a forthcoming paper.
 *   `/Citations/`: BibTeX file for all referenced material.
 
 
