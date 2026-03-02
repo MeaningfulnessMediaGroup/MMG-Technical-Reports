@@ -105,19 +105,3 @@ We encourage contributions to the ongoing development of the framework, particul
 1.  **Review TR-001:** Read the foundational arguments available in `/TR-001 - The Illusion of Fatalism/` (PDF/LaTeX).
 2.  **Provide Feedback:** Open an **Issue** on this repository to discuss TR-001, especially the connection between *unpredictability* and *agency*.
 3.  **Contribute Drafts:** Refer to the `/TR-003_draft/` folders for work-in-progress materials.
-
----
-
-## 📂 Repository Structure
-
-*   `/TR-001 - The Illusion of Fatalism/`: Source files (`.tex`, `.pdf`) for the foundational paper.
-*   `/TR-002 - Functional Agency in Physical Systems/`: Source files (`.tex`, `.pdf`).
-*   `/TR-00X_draft/`: Initial conceptual models regarding a forthcoming paper.
-*   `/Citations/`: BibTeX file for all referenced material.
-
-
-
-
-
-
-
